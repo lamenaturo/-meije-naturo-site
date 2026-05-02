@@ -149,7 +149,7 @@
 </nav>
 
 <div id="home" class="hero">
-  <div class="hero-content fu">
+  <div class="hero-content fu vis">
     <p class="eyebrow">Naturopathie fonctionnelle</p>
     <h1>Retrouve<br><em>ton équilibre</em><br>naturellement.</h1>
     <p class="hero-sub">J'accompagne les femmes sensibles, fatiguées et en déséquilibre hormonal à comprendre leur corps et retrouver de l'énergie.</p>
@@ -383,7 +383,7 @@
     const status = document.getElementById('f-status');
 
     if (!offre) { status.style.display='block'; status.style.background='rgba(181,88,58,0.15)'; status.style.color='#E8956C'; status.textContent='Merci de choisir une offre.'; return; }
-    if (!dispo) { status.style.display='block'; status.style.background='rgba(181,88,58,0.15)'; status.style.color='#E8956C'; status.textContent='Merci d'indiquer tes disponibilités.'; return; }
+    if (!dispo) { status.style.display='block'; status.style.background='rgba(181,88,58,0.15)'; status.style.color='#E8956C'; status.textContent='Merci dindiquer tes disponibilités.'; return; }
 
     status.style.display='block'; status.style.background='rgba(255,255,255,0.06)'; status.style.color='rgba(242,232,218,0.6)'; status.textContent='Envoi en cours…';
 
@@ -406,7 +406,7 @@
       }
     } catch(err) {
       status.style.background='rgba(181,88,58,0.15)'; status.style.color='#E8956C';
-      status.textContent='Une erreur s'est produite. Écris-moi sur Instagram @meije.naturo';
+      status.textContent='Une erreur est survenue. Écris-moi sur Instagram @meije.naturo';
     }
   }
 </script>
@@ -429,7 +429,7 @@
   document.querySelectorAll('.fu').forEach(el => obs.observe(el));
   window.addEventListener('scroll', () => {
     document.querySelector('nav').style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(28,16,8,0.08)' : 'none';
-  }
+  });
 </script>
 </body>
 </html>
