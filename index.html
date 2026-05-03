@@ -182,7 +182,7 @@
         </div>
         <div class="card">
           <h3>Mes spécialités</h3>
-          <p>Santé hormonale féminine · SOPK · SPM · Endométriose · Fertilité · Accompagnement des couples · Fatigue chronique · Cycle menstruel</p>
+          <p>SOPK · SPM · Endométriose · Fertilité · Fatigue chronique · Anxiété · Stress · Acné · Troubles digestifs · Syndrome de l'intestin irritable · Cycle menstruel</p>
         </div>
 
       </div>
@@ -273,14 +273,22 @@
     <p>Remplis le formulaire ci-dessous — je te réponds sous 48h pour qu'on fixe une date ensemble.</p>
 
     <div id="contact-form" style="max-width:560px;margin:36px auto 0;display:flex;flex-direction:column;gap:14px;">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;flex-wrap:wrap;">
         <div>
           <label style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(242,232,218,0.4);display:block;margin-bottom:6px;">Prénom *</label>
           <input type="text" id="f-prenom" required placeholder="Ton prénom" style="width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 14px;color:rgba(242,232,218,0.9);font-family:var(--sans);font-size:13px;outline:none;" />
         </div>
         <div>
+          <label style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(242,232,218,0.4);display:block;margin-bottom:6px;">Nom *</label>
+          <input type="text" id="f-nom" required placeholder="Ton nom" style="width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 14px;color:rgba(242,232,218,0.9);font-family:var(--sans);font-size:13px;outline:none;" />
+        </div>
+        <div>
           <label style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(242,232,218,0.4);display:block;margin-bottom:6px;">Email *</label>
           <input type="email" id="f-email" required placeholder="ton@email.fr" style="width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 14px;color:rgba(242,232,218,0.9);font-family:var(--sans);font-size:13px;outline:none;" />
+        </div>
+        <div>
+          <label style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(242,232,218,0.4);display:block;margin-bottom:6px;">Téléphone</label>
+          <input type="tel" id="f-tel" placeholder="06 00 00 00 00" style="width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 14px;color:rgba(242,232,218,0.9);font-family:var(--sans);font-size:13px;outline:none;" />
         </div>
       </div>
 
@@ -301,19 +309,7 @@
 
       <div>
         <label style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(242,232,218,0.4);display:block;margin-bottom:10px;">Tes disponibilités *</label>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;" id="f-jours-group">
-          <button type="button" class="f-dispo-btn" data-group="jours" data-val="Lundi" style="padding:7px 14px;border-radius:20px;border:1px solid rgba(255,255,255,0.12);background:transparent;color:rgba(242,232,218,0.45);font-family:var(--sans);font-size:12px;cursor:pointer;transition:all 0.2s;">Lundi</button>
-          <button type="button" class="f-dispo-btn" data-group="jours" data-val="Mardi" style="padding:7px 14px;border-radius:20px;border:1px solid rgba(255,255,255,0.12);background:transparent;color:rgba(242,232,218,0.45);font-family:var(--sans);font-size:12px;cursor:pointer;transition:all 0.2s;">Mardi</button>
-          <button type="button" class="f-dispo-btn" data-group="jours" data-val="Mercredi" style="padding:7px 14px;border-radius:20px;border:1px solid rgba(255,255,255,0.12);background:transparent;color:rgba(242,232,218,0.45);font-family:var(--sans);font-size:12px;cursor:pointer;transition:all 0.2s;">Mercredi</button>
-          <button type="button" class="f-dispo-btn" data-group="jours" data-val="Jeudi" style="padding:7px 14px;border-radius:20px;border:1px solid rgba(255,255,255,0.12);background:transparent;color:rgba(242,232,218,0.45);font-family:var(--sans);font-size:12px;cursor:pointer;transition:all 0.2s;">Jeudi</button>
-          <button type="button" class="f-dispo-btn" data-group="jours" data-val="Vendredi" style="padding:7px 14px;border-radius:20px;border:1px solid rgba(255,255,255,0.12);background:transparent;color:rgba(242,232,218,0.45);font-family:var(--sans);font-size:12px;cursor:pointer;transition:all 0.2s;">Vendredi</button>
-          <button type="button" class="f-dispo-btn" data-group="jours" data-val="Samedi" style="padding:7px 14px;border-radius:20px;border:1px solid rgba(255,255,255,0.12);background:transparent;color:rgba(242,232,218,0.45);font-family:var(--sans);font-size:12px;cursor:pointer;transition:all 0.2s;">Samedi</button>
-        </div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <button type="button" class="f-dispo-btn" data-group="creneaux" data-val="Matin" style="padding:7px 14px;border-radius:20px;border:1px solid rgba(255,255,255,0.12);background:transparent;color:rgba(242,232,218,0.45);font-family:var(--sans);font-size:12px;cursor:pointer;transition:all 0.2s;">Matin</button>
-          <button type="button" class="f-dispo-btn" data-group="creneaux" data-val="Après-midi" style="padding:7px 14px;border-radius:20px;border:1px solid rgba(255,255,255,0.12);background:transparent;color:rgba(242,232,218,0.45);font-family:var(--sans);font-size:12px;cursor:pointer;transition:all 0.2s;">Après-midi</button>
-          <button type="button" class="f-dispo-btn" data-group="creneaux" data-val="Soir" style="padding:7px 14px;border-radius:20px;border:1px solid rgba(255,255,255,0.12);background:transparent;color:rgba(242,232,218,0.45);font-family:var(--sans);font-size:12px;cursor:pointer;transition:all 0.2s;">Soir</button>
-        </div>
+        <div id="f-dispo-grid" style="display:flex;flex-direction:column;gap:10px;"></div>
         <input type="hidden" id="f-dispo" />
       </div>
 
@@ -344,28 +340,48 @@
     });
   });
 
-  // Dispo buttons (multi-select)
-  const selectedDispo = { jours: [], creneaux: [] };
-  document.querySelectorAll('.f-dispo-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const group = btn.dataset.group;
-      const val = btn.dataset.val;
-      const idx = selectedDispo[group].indexOf(val);
-      if (idx === -1) {
-        selectedDispo[group].push(val);
-        btn.style.background = 'rgba(181,88,58,0.2)';
-        btn.style.color = '#E8956C';
-        btn.style.borderColor = 'rgba(181,88,58,0.4)';
-      } else {
-        selectedDispo[group].splice(idx, 1);
-        btn.style.background = 'transparent';
-        btn.style.color = 'rgba(242,232,218,0.45)';
-        btn.style.borderColor = 'rgba(255,255,255,0.12)';
-      }
-      document.getElementById('f-dispo').value =
-        (selectedDispo.jours.length ? 'Jours : ' + selectedDispo.jours.join(', ') : '') +
-        (selectedDispo.creneaux.length ? ' · Créneaux : ' + selectedDispo.creneaux.join(', ') : '');
+  // Dispo par jour
+  const jours = ['Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+  const creneaux = ['Matin','Apres-midi','Soir'];
+  const selectedDispo = {};
+  jours.forEach(j => selectedDispo[j] = []);
+
+  const btnStyle = 'padding:6px 12px;border-radius:20px;border:1px solid rgba(255,255,255,0.12);background:transparent;color:rgba(242,232,218,0.45);font-family:var(--sans);font-size:11px;cursor:pointer;transition:all 0.2s;';
+  const btnActiveStyle = 'padding:6px 12px;border-radius:20px;border:1px solid rgba(181,88,58,0.4);background:rgba(181,88,58,0.2);color:#E8956C;font-family:var(--sans);font-size:11px;cursor:pointer;transition:all 0.2s;';
+  const jourStyle = 'font-size:11px;letter-spacing:1px;text-transform:uppercase;color:rgba(242,232,218,0.35);width:70px;flex-shrink:0;padding-top:7px;';
+
+  const grid = document.getElementById('f-dispo-grid');
+  jours.forEach(jour => {
+    const row = document.createElement('div');
+    row.style = 'display:flex;align-items:flex-start;gap:8px;flex-wrap:wrap;';
+    const label = document.createElement('span');
+    label.style = jourStyle;
+    label.textContent = jour;
+    row.appendChild(label);
+    const btns = document.createElement('div');
+    btns.style = 'display:flex;gap:6px;flex-wrap:wrap;';
+    creneaux.forEach(c => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.textContent = c;
+      btn.style.cssText = btnStyle;
+      btn.addEventListener('click', () => {
+        const idx = selectedDispo[jour].indexOf(c);
+        if (idx === -1) {
+          selectedDispo[jour].push(c);
+          btn.style.cssText = btnActiveStyle;
+        } else {
+          selectedDispo[jour].splice(idx, 1);
+          btn.style.cssText = btnStyle;
+        }
+        const parts = [];
+        jours.forEach(j => { if (selectedDispo[j].length) parts.push(j + ' : ' + selectedDispo[j].join(', ')); });
+        document.getElementById('f-dispo').value = parts.join(' | ');
+      });
+      btns.appendChild(btn);
     });
+    row.appendChild(btns);
+    grid.appendChild(row);
   });
 
   // Form submit via EmailJS
@@ -376,37 +392,42 @@
 
   async function submitContactForm() {
     const prenom = document.getElementById('f-prenom').value.trim();
+    const nom = document.getElementById('f-nom').value.trim();
     const email = document.getElementById('f-email').value.trim();
+    const tel = document.getElementById('f-tel').value.trim();
     const offre = document.getElementById('f-offre').value;
     const problematique = document.getElementById('f-problematique').value.trim();
     const dispo = document.getElementById('f-dispo').value;
     const status = document.getElementById('f-status');
 
+    if (!prenom || !email) { status.style.display='block'; status.style.background='rgba(181,88,58,0.15)'; status.style.color='#E8956C'; status.textContent='Merci de remplir ton prénom et email.'; return; }
     if (!offre) { status.style.display='block'; status.style.background='rgba(181,88,58,0.15)'; status.style.color='#E8956C'; status.textContent='Merci de choisir une offre.'; return; }
-    if (!dispo) { status.style.display='block'; status.style.background='rgba(181,88,58,0.15)'; status.style.color='#E8956C'; status.textContent='Merci dindiquer tes disponibilités.'; return; }
+    if (!dispo) { status.style.display='block'; status.style.background='rgba(181,88,58,0.15)'; status.style.color='#E8956C'; status.textContent='Merci dindiquer tes disponibilites.'; return; }
 
-    status.style.display='block'; status.style.background='rgba(255,255,255,0.06)'; status.style.color='rgba(242,232,218,0.6)'; status.textContent='Envoi en cours…';
+    status.style.display='block'; status.style.background='rgba(255,255,255,0.06)'; status.style.color='rgba(242,232,218,0.6)'; status.textContent='Envoi en cours...';
 
     try {
-      // Attendre que emailjs soit chargé
-      if (!window.emailjs) throw new Error('EmailJS non chargé');
-      if (window.emailjs) {
-        window.emailjs.init('zpxiv3rkIbtfdqAQ6');
-        await window.emailjs.send('service_5bi57sr', 'template_im5mm8v', {
-          prenom: prenom,
-          action: `souhaite prendre RDV — ${offre}`,
-          to_email: 'lamenaturo@gmail.com',
-          message: "Offre : " + offre + " | Problématique : " + problematique + " | Disponibilités : " + dispo + " | Email : " + email
-        });
-        status.style.background='rgba(74,122,90,0.15)'; status.style.color='#6AAA7A';
-        status.textContent='Message envoyé ! Je te réponds sous 48h 🌿';
-        document.getElementById('contact-form').reset();
-        document.querySelectorAll('.f-offre-btn, .f-dispo-btn').forEach(b => { b.style.background='transparent'; b.style.color=b.classList.contains('f-offre-btn')?'rgba(242,232,218,0.5)':'rgba(242,232,218,0.45)'; b.style.borderColor=b.classList.contains('f-offre-btn')?'rgba(255,255,255,0.15)':'rgba(255,255,255,0.12)'; });
-        selectedDispo.jours=[]; selectedDispo.creneaux=[];
-      }
+      emailjs.init('zpxiv3rkIbtfdqAQ6');
+      await emailjs.send('service_5bi57sr', 'template_im5mm8v', {
+        prenom: prenom + ' ' + nom,
+        action: 'souhaite prendre RDV - ' + offre,
+        message: 'Offre : ' + offre + ' | Problematique : ' + problematique + ' | Disponibilites : ' + dispo + ' | Email : ' + email + ' | Tel : ' + tel
+      });
+      status.style.background='rgba(74,122,90,0.15)'; status.style.color='#6AAA7A';
+      status.textContent='Message envoye ! Je te reponds sous 48h';
+      document.getElementById('f-prenom').value='';
+      document.getElementById('f-nom').value='';
+      document.getElementById('f-email').value='';
+      document.getElementById('f-tel').value='';
+      document.getElementById('f-problematique').value='';
+      document.getElementById('f-offre').value='';
+      document.getElementById('f-dispo').value='';
+      document.querySelectorAll('.f-offre-btn, .f-dispo-btn').forEach(b => { b.style.background='transparent'; b.style.color=b.classList.contains('f-offre-btn')?'rgba(242,232,218,0.5)':'rgba(242,232,218,0.45)'; b.style.borderColor=b.classList.contains('f-offre-btn')?'rgba(255,255,255,0.15)':'rgba(255,255,255,0.12)'; });
+      selectedDispo.jours=[]; selectedDispo.creneaux=[];
     } catch(err) {
       status.style.background='rgba(181,88,58,0.15)'; status.style.color='#E8956C';
-      status.textContent='Une erreur est survenue. Écris-moi sur Instagram @meije.naturo';
+      status.textContent='Une erreur est survenue. Ecris-moi sur Instagram @meije.naturo';
+      console.error(err);
     }
   }
 </script>
