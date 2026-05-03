@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CGV & Mentions légales — Meije Naturo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #F2E8DA; --surface: #FAF4EC;
+      --terra: #B5583A;
+      --ink: #1C1008; --ink-mid: rgba(28,16,8,0.55); --ink-dim: rgba(28,16,8,0.35);
+      --border: rgba(28,16,8,0.1);
+      --sans: 'DM Sans', sans-serif; --serif: 'Cormorant Garamond', Georgia, serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); font-family: var(--sans); color: var(--ink); -webkit-font-smoothing: antialiased; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(242,232,218,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 24px; display: flex; justify-content: space-between; align-items: center; height: 60px; }
+    .nav-logo { font-family: var(--serif); font-size: 20px; font-weight: 300; }
+    .nav-logo em { font-style: italic; color: var(--terra); }
+    .back { font-size: 13px; color: var(--ink-mid); text-decoration: none; }
+    .back:hover { color: var(--terra); }
+    main { max-width: 720px; margin: 0 auto; padding: 100px 24px 80px; }
+    .label { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--terra); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+    .label::before { content: ''; display: block; width: 30px; height: 1px; background: var(--terra); }
+    h1 { font-family: var(--serif); font-size: clamp(32px, 5vw, 48px); font-weight: 300; margin-bottom: 48px; }
+    h1 em { font-style: italic; color: var(--terra); }
+    .block { background: var(--surface); border-radius: 16px; border: 1px solid var(--border); padding: 28px; margin-bottom: 16px; }
+    .block h2 { font-family: var(--serif); font-size: 20px; font-weight: 400; color: var(--terra); margin-bottom: 14px; }
+    .block p { font-size: 14px; color: var(--ink-mid); line-height: 1.8; margin-bottom: 10px; }
+    .block p:last-child { margin-bottom: 0; }
+    .block strong { color: var(--ink); font-weight: 500; }
+    footer { text-align: center; padding: 32px; font-size: 12px; color: var(--ink-dim); border-top: 1px solid var(--border); }
+    footer a { color: var(--terra); text-decoration: none; }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="/" class="nav-logo">meije<em>.</em>naturo</a>
+  <a href="/" class="back">← Retour au site</a>
+</nav>
+<main>
+  <p class="label">Informations légales</p>
+  <h1>CGV & <em>Mentions légales</em></h1>
+
+  <div class="block">
+    <h2>Mentions légales</h2>
+    <p><strong>Responsable de publication :</strong> Meije Delmonte</p>
+    <p><strong>Activité :</strong> Naturopathe fonctionnelle — Auto-entreprise</p>
+    <p><strong>SIRET :</strong> 852 204 825 00032</p>
+    <p><strong>Siège social :</strong> Normandie, France</p>
+    <p><strong>Contact :</strong> lamenaturo@gmail.com</p>
+    <p><strong>Site hébergé par :</strong> Vercel Inc., 340 Pine Street, San Francisco, CA 94104, USA</p>
+  </div>
+
+  <div class="block">
+    <h2>Prestations proposées</h2>
+    <p>Consultation initiale (70€), Pack 3 mois (200€ ou 2×100€), Séance de suivi (60€). Toutes les séances se déroulent en visioconférence.</p>
+  </div>
+
+  <div class="block">
+    <h2>Réservation & paiement</h2>
+    <p>La réservation est confirmée après échange par email et réception du règlement. Paiement par virement bancaire ou PayPal. Pour le Pack 3 mois, paiement en 2 fois possible.</p>
+  </div>
+
+  <div class="block">
+    <h2>Annulation & report</h2>
+    <p>Toute annulation doit être signalée au moins 48h à l'avance. En cas d'annulation tardive sans prévenir, la séance reste due. Un report est possible sous conditions.</p>
+  </div>
+
+  <div class="block">
+    <h2>Responsabilité</h2>
+    <p>Les accompagnements proposés sont complémentaires au suivi médical et ne constituent pas un acte médical. Meije Delmonte ne pose pas de diagnostic et ne prescrit pas de traitement médical.</p>
+  </div>
+
+  <div class="block">
+    <h2>Données personnelles (RGPD)</h2>
+    <p>Les informations collectées sont utilisées uniquement dans le cadre de l'accompagnement naturopathique. Elles ne sont jamais transmises à des tiers. Conformément au RGPD, tu disposes d'un droit d'accès, de modification et de suppression de tes données en écrivant à lamenaturo@gmail.com.</p>
+  </div>
+
+</main>
+<footer>
+  <p>© 2026 Meije Delmonte · <a href="/faq.html">FAQ</a> · <a href="/">Retour au site</a></p>
+</footer>
+</body>
+</html>
