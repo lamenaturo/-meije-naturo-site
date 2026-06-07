@@ -169,7 +169,35 @@
       section { padding: 48px 16px; }
       .hero-content { padding: 40px 16px; }
       .steps { grid-template-columns: 1fr; }
+      .pack-form-wrapper { padding: 24px 18px; }
+      .form-row { grid-template-columns: 1fr; gap: 0; }
     }
+
+    /* Pack booking form */
+    #packs-contact { background: var(--surface); }
+    .pack-form-sub { font-size: 15px; color: var(--ink-mid); line-height: 1.6; max-width: 500px; }
+    .pack-form-wrapper {
+      max-width: 620px; margin: 40px auto 0; background: var(--bg);
+      border-radius: 24px; padding: 40px; border: 1px solid var(--border);
+    }
+    .form-group { display: flex; flex-direction: column; gap: 7px; margin-bottom: 20px; }
+    .form-group label { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--ink-mid); font-weight: 500; }
+    .form-group input,
+    .form-group select {
+      width: 100%; padding: 13px 16px; border: 1px solid var(--border); border-radius: 12px;
+      background: var(--surface); font-family: var(--sans); font-size: 14px; color: var(--ink);
+      outline: none; transition: border-color 0.2s, box-shadow 0.2s; appearance: none; -webkit-appearance: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus { border-color: var(--terra); box-shadow: 0 0 0 3px rgba(181,88,58,0.1); }
+    .form-group select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238A5A2A' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 16px center; padding-right: 44px;
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-msg { display: none; text-align: center; margin-top: 16px; font-size: 14px; padding: 14px 18px; border-radius: 12px; line-height: 1.5; }
+    .form-success { color: #2d6a3f; background: rgba(74,122,90,0.1); border: 1px solid rgba(74,122,90,0.2); }
+    .form-error { color: #c0392b; background: rgba(192,57,43,0.08); border: 1px solid rgba(192,57,43,0.15); }
   </style>
 </head>
 <body>
@@ -234,19 +262,6 @@
     <div class="offres-grid">
 
       <div class="offre fu">
-        <p class="olabel">Consultation</p>
-        <h3 class="otitle">Consultation</h3>
-        <p class="oprice">70€</p>
-        <ul class="odesc">
-          <li>Analyse de ton questionnaire santé et de tes bilans sanguins</li>
-          <li>Rendez-vous visio 1h</li>
-          <li>Protocole personnalisé envoyé sous 72h</li>
-        </ul>
-        <button onclick="Calendly.initPopupWidget({url:'https://calendly.com/meijenaturo/consultation-naturopathie'});return false;" class="btn-g" style="width:100%;text-align:center;display:block;">Prendre RDV</button>
-      </div>
-
-      <div class="offre star fu" style="transition-delay:0.1s">
-        <span class="badge">Recommandé</span>
         <p class="olabel">Accompagnement</p>
         <h3 class="otitle">Pack 3 mois</h3>
         <p class="oprice">250€ <span>paiement en plusieurs fois possible</span></p>
@@ -257,8 +272,21 @@
           <li>Ressources personnalisées</li>
           <li>Bilan de fin d'accompagnement</li>
         </ul>
-        <a href="#packs-contact" class="btn-p" style="width:100%;text-align:center;display:block;">Me contacter</a>
-        <p class="pack-note">Je t'envoie le lien de paiement après confirmation.</p>
+        <a href="#packs-contact" class="btn-g" style="width:100%;text-align:center;display:block;">Réserver ce pack</a>
+      </div>
+
+      <div class="offre star fu" style="transition-delay:0.1s">
+        <span class="badge">Réservation en ligne</span>
+        <p class="olabel">Consultation</p>
+        <h3 class="otitle">Consultation</h3>
+        <p class="oprice">70€</p>
+        <ul class="odesc">
+          <li>Analyse de ton questionnaire santé et de tes bilans sanguins</li>
+          <li>Rendez-vous visio 1h</li>
+          <li>Protocole personnalisé envoyé sous 72h</li>
+        </ul>
+        <button onclick="Calendly.initPopupWidget({url:'https://calendly.com/meijenaturo/consultation-naturopathie'});return false;" class="btn-p" style="width:100%;text-align:center;display:block;">Prendre RDV</button>
+        <p class="pack-note">Réservation directe — disponible immédiatement.</p>
       </div>
 
       <div class="offre fu" style="transition-delay:0.2s">
@@ -272,8 +300,7 @@
           <li>Ressources personnalisées</li>
           <li>Bilan de fin d'accompagnement</li>
         </ul>
-        <a href="#packs-contact" class="btn-g" style="width:100%;text-align:center;display:block;">Me contacter</a>
-        <p class="pack-note-light">Je t'envoie le lien de paiement après confirmation.</p>
+        <a href="#packs-contact" class="btn-g" style="width:100%;text-align:center;display:block;">Réserver ce pack</a>
       </div>
 
     </div>
@@ -289,7 +316,7 @@
       <div class="step fu">
         <div class="step-n">1</div>
         <h3>Tu prends RDV</h3>
-        <p>Tu réserves directement en ligne via le calendrier. Pour les packs, tu m'envoies un message et je te transmets le lien de paiement.</p>
+        <p>Pour la consultation, réserve directement en ligne via le calendrier. Pour un pack, remplis le formulaire de réservation — je te contacte sous 48h avec le lien de paiement.</p>
       </div>
       <div class="step fu" style="transition-delay:0.1s">
         <div class="step-n">2</div>
@@ -325,51 +352,48 @@
   </div>
 </section>
 
-<!-- Section packs — formulaire de contact -->
+<!-- Section packs — formulaire de réservation -->
 <section id="packs-contact">
   <div class="inner">
     <p class="sec-label fu">Accompagnements</p>
-    <h2 class="fu">Intéressée par <em>un pack ?</em></h2>
+    <h2 class="fu">Réserver <em>un pack</em></h2>
+    <p class="pack-form-sub fu">Remplis le formulaire ci-dessous — je te contacte sous 48h avec le lien de paiement.</p>
 
-    <div class="packs-contact-grid">
-
-      <div class="pack-card fu">
-        <p class="olabel">Accompagnement</p>
-        <h3>Pack 3 mois</h3>
-        <p class="price">250€ <span>paiement en plusieurs fois possible</span></p>
-        <ul>
-          <li>1 consultation initiale complète</li>
-          <li>3 séances de suivi visio 45 min</li>
-          <li>Échanges encadrés via la plateforme lun-ven</li>
-          <li>Ressources personnalisées</li>
-          <li>Bilan de fin d'accompagnement</li>
-        </ul>
-        <div class="how">
-          📩 Envoie-moi un message avec ton prénom, ton email et "Pack 3 mois" — je te réponds sous 48h avec le lien de paiement et la suite.
+    <div class="pack-form-wrapper fu">
+      <form id="pack-form">
+        <div class="form-group">
+          <label for="pack-choice">Ton pack</label>
+          <select id="pack-choice" name="pack" required>
+            <option value="" disabled selected>Choisir ton pack…</option>
+            <option value="Pack 3 mois — 250€">Pack 3 mois — 250€</option>
+            <option value="Pack 6 mois — 430€">Pack 6 mois — 430€</option>
+          </select>
         </div>
-        <a href="mailto:lamenaturo@gmail.com?subject=Pack 3 mois — demande&body=Bonjour Meije, je suis intéressée par le Pack 3 mois. Mon prénom : " class="btn-g" style="text-align:center;display:block;">Contacter Meije</a>
-      </div>
-
-      <div class="pack-card dark fu" style="transition-delay:0.1s">
-        <p class="olabel">Accompagnement</p>
-        <h3>Pack 6 mois</h3>
-        <p class="price">430€ <span>paiement en plusieurs fois possible</span></p>
-        <ul>
-          <li>1 consultation initiale complète</li>
-          <li>6 séances de suivi visio 45 min</li>
-          <li>Échanges encadrés via la plateforme lun-ven</li>
-          <li>Ressources personnalisées</li>
-          <li>Bilan de fin d'accompagnement</li>
-        </ul>
-        <div class="how">
-          📩 Envoie-moi un message avec ton prénom, ton email et "Pack 6 mois" — je te réponds sous 48h avec le lien de paiement et la suite.
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-prenom">Prénom</label>
+            <input type="text" id="f-prenom" name="prenom" required placeholder="Ton prénom">
+          </div>
+          <div class="form-group">
+            <label for="f-nom">Nom</label>
+            <input type="text" id="f-nom" name="nom" required placeholder="Ton nom">
+          </div>
         </div>
-        <a href="mailto:lamenaturo@gmail.com?subject=Pack 6 mois — demande&body=Bonjour Meije, je suis intéressée par le Pack 6 mois. Mon prénom : " class="btn-p" style="text-align:center;display:block;">Contacter Meije</a>
-      </div>
-
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-tel">Téléphone</label>
+            <input type="tel" id="f-tel" name="telephone" required placeholder="06 XX XX XX XX">
+          </div>
+          <div class="form-group">
+            <label for="f-email">Email</label>
+            <input type="email" id="f-email" name="email" required placeholder="ton@email.com">
+          </div>
+        </div>
+        <button type="submit" class="btn-p" id="form-submit" style="width:100%;text-align:center;display:block;margin-top:4px;">Envoyer ma demande</button>
+        <p class="form-msg form-success" id="form-success">Ta demande a bien été envoyée ! Je te contacte sous 48h avec les informations de paiement.</p>
+        <p class="form-msg form-error" id="form-error">Une erreur s'est produite. Contacte-moi directement sur <a href="https://www.instagram.com/meije.naturo" style="color:var(--terra);" target="_blank">@meije.naturo</a></p>
+      </form>
     </div>
-
-    <p style="text-align:center;font-size:12px;color:var(--ink-dim);margin-top:28px;">Tu peux aussi me contacter directement sur Instagram <a href="https://www.instagram.com/meije.naturo" style="color:var(--terra);" target="_blank">@meije.naturo</a></p>
   </div>
 </section>
 
@@ -395,6 +419,60 @@
   window.addEventListener('scroll', () => {
     document.querySelector('nav').style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(28,16,8,0.08)' : 'none';
   });
+
+  // ─── Configuration EmailJS ────────────────────────────────────────────────
+  // 1. Créer un compte sur https://emailjs.com (gratuit)
+  // 2. Connecter ton Gmail comme service
+  // 3. Créer un template avec les variables : {{pack}}, {{prenom}}, {{nom}}, {{telephone}}, {{email}}
+  // 4. Remplacer les trois valeurs ci-dessous par tes identifiants
+  const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';
+  const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';
+  const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
+  // ─────────────────────────────────────────────────────────────────────────
+
+  const emailjsReady = EMAILJS_PUBLIC_KEY !== 'YOUR_PUBLIC_KEY';
+  if (emailjsReady) emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+
+  const packForm = document.getElementById('pack-form');
+  if (packForm) {
+    packForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = document.getElementById('form-submit');
+      const successEl = document.getElementById('form-success');
+      const errorEl   = document.getElementById('form-error');
+      successEl.style.display = 'none';
+      errorEl.style.display   = 'none';
+      btn.disabled    = true;
+      btn.textContent = 'Envoi en cours…';
+
+      const data = {
+        pack:      document.getElementById('pack-choice').value,
+        prenom:    document.getElementById('f-prenom').value,
+        nom:       document.getElementById('f-nom').value,
+        telephone: document.getElementById('f-tel').value,
+        email:     document.getElementById('f-email').value,
+      };
+
+      if (emailjsReady) {
+        try {
+          await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, data);
+          successEl.style.display = 'block';
+          packForm.reset();
+        } catch (_) {
+          errorEl.style.display = 'block';
+        }
+      } else {
+        // Fallback : ouvre le client mail avec toutes les infos pré-remplies
+        const subject = `Demande ${data.pack} — ${data.prenom} ${data.nom}`;
+        const body    = `Pack : ${data.pack}\nPrénom : ${data.prenom}\nNom : ${data.nom}\nTéléphone : ${data.telephone}\nEmail : ${data.email}`;
+        window.location.href = `mailto:lamenaturo@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        successEl.style.display = 'block';
+      }
+
+      btn.disabled    = false;
+      btn.textContent = 'Envoyer ma demande';
+    });
+  }
 </script>
 </body>
 </html>
