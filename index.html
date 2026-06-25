@@ -60,109 +60,81 @@
     h2 { font-family: var(--serif); font-size: clamp(28px, 4vw, 44px); font-weight: 300; line-height: 1.15; margin-bottom: 24px; }
     h2 em { font-style: italic; color: var(--terra); }
 
-    #about { background: var(--surface); }
+    /* POUR TOI SI */
+    #pourcoi { background: var(--surface); }
+    .pourcoi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; margin-top: 40px; }
+    .pourcoi-intro { font-size: 15px; line-height: 1.85; color: var(--ink-mid); margin-bottom: 32px; max-width: 560px; }
+    .symptomes { list-style: none; }
+    .symptomes li { font-size: 14px; color: var(--ink-mid); padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; line-height: 1.5; }
+    .symptomes li::before { content: "—"; color: var(--terra); flex-shrink: 0; }
+    .pourcoi-closing { background: var(--bg); border-radius: 18px; padding: 28px; border: 1px solid var(--border); font-family: var(--serif); font-size: 18px; font-weight: 300; line-height: 1.6; color: var(--ink); margin-top: 32px; }
+    .pourcoi-closing em { font-style: italic; color: var(--terra); }
+
+    /* ABOUT */
+    #about { background: var(--bg); }
     .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
     .about-text p { font-size: 15px; line-height: 1.85; color: var(--ink-mid); margin-bottom: 18px; }
     .about-text strong { color: var(--ink); font-weight: 500; }
-    .card { background: var(--bg); border-radius: 18px; padding: 24px 26px; border: 1px solid var(--border); margin-bottom: 14px; }
+    .card { background: var(--surface); border-radius: 18px; padding: 24px 26px; border: 1px solid var(--border); margin-bottom: 14px; }
     .card h3 { font-family: var(--serif); font-size: 18px; font-weight: 400; color: var(--terra); margin-bottom: 10px; }
     .card p { font-size: 14px; line-height: 1.7; color: var(--ink-mid); }
 
-    #offres { background: var(--bg); }
-    .offres-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.15fr 1fr;
-      gap: 20px;
-      margin-top: 48px;
-      align-items: start;
+    /* OFFRE */
+    #offre { background: var(--surface); }
+    .offre-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; margin-top: 48px; }
+    .offre-card {
+      background: var(--ink); border-radius: 24px; padding: 40px 36px;
+      box-shadow: 0 24px 60px rgba(28,16,8,0.18);
     }
+    .offre-label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--terra); margin-bottom: 14px; }
+    .offre-title { font-family: var(--serif); font-size: 28px; font-weight: 300; color: rgba(242,232,218,0.95); margin-bottom: 6px; }
+    .offre-price { font-family: var(--serif); font-size: 44px; font-weight: 300; color: var(--terra); margin-bottom: 4px; }
+    .offre-price-alt { font-size: 13px; color: rgba(242,232,218,0.35); margin-bottom: 28px; }
+    .offre-list { list-style: none; margin-bottom: 32px; }
+    .offre-list li { font-size: 13px; color: rgba(242,232,218,0.78); padding: 9px 0; border-bottom: 1px solid rgba(255,255,255,0.07); display: flex; gap: 10px; line-height: 1.5; }
+    .offre-list li::before { content: "🌿"; font-size: 11px; flex-shrink: 0; margin-top: 2px; }
+    .offre-cta { display: block; width: 100%; text-align: center; }
+    .offre-details { display: flex; flex-direction: column; gap: 20px; }
+    .offre-detail-block { padding: 24px; background: var(--bg); border-radius: 16px; border: 1px solid var(--border); }
+    .offre-detail-block h3 { font-family: var(--serif); font-size: 17px; font-weight: 400; color: var(--terra); margin-bottom: 8px; }
+    .offre-detail-block p { font-size: 13px; line-height: 1.7; color: var(--ink-mid); }
+    .offre-note { font-size: 11px; color: rgba(242,232,218,0.28); font-style: italic; margin-top: 14px; text-align: center; }
 
-    .offre {
-      background: var(--surface); border-radius: 20px; padding: 28px 24px;
-      border: 1px solid var(--border); position: relative;
-      transition: transform 0.2s, box-shadow 0.2s;
-      display: flex; flex-direction: column;
-    }
-    .offre:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(28,16,8,0.09); }
-
-    .offre.star {
-      background: var(--ink); border-color: var(--ink);
-      padding: 36px 28px;
-      box-shadow: 0 24px 60px rgba(28,16,8,0.22);
-    }
-    .offre.star:hover { transform: translateY(-6px); box-shadow: 0 32px 70px rgba(28,16,8,0.28); }
-    .offre.star .otitle { color: rgba(242,232,218,0.95); font-size: 26px; }
-    .offre.star .odesc li { color: rgba(242,232,218,0.8); border-bottom-color: rgba(255,255,255,0.08); }
-    .offre.star .oprice { color: var(--terra); font-size: 42px; }
-    .offre.star .olabel { color: var(--terra); }
-
-    .badge { position: absolute; top: 18px; right: 18px; background: var(--terra); color: #FAF4EC; font-size: 10px; padding: 4px 12px; border-radius: 20px; font-weight: 500; letter-spacing: 0.5px; }
-    .olabel { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--bark); margin-bottom: 14px; }
-    .otitle { font-family: var(--serif); font-size: 22px; font-weight: 400; color: var(--ink); margin-bottom: 8px; }
-    .oprice { font-family: var(--serif); font-size: 34px; font-weight: 300; color: var(--terra); margin-bottom: 18px; }
-    .oprice span { font-size: 13px; color: var(--ink-dim); font-family: var(--sans); font-weight: 300; }
-    .offre.star .oprice span { color: rgba(242,232,218,0.35); }
-    .odesc { list-style: none; margin-bottom: 24px; flex: 1; }
-    .odesc li { font-size: 13px; color: var(--ink-mid); padding: 8px 0; border-bottom: 1px solid var(--border); display: flex; gap: 8px; line-height: 1.5; }
-    .odesc li::before { content: "🌿"; font-size: 11px; flex-shrink: 0; margin-top: 2px; }
-    .pack-note { font-size: 11px; color: var(--ink-dim); font-style: italic; margin-top: 10px; line-height: 1.5; }
-    .offre.star .pack-note { color: rgba(242,232,218,0.3); }
-    .offre .btn-p, .offre .btn-g { width: 100%; text-align: center; display: block; }
-
-    #process { background: var(--surface); }
+    /* PROCESS */
+    #process { background: var(--bg); }
     .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px; }
     .step { text-align: center; }
     .step-n { width: 46px; height: 46px; border-radius: 50%; background: var(--terra-dim); border: 1px solid rgba(181,88,58,0.2); display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: 20px; color: var(--terra); margin: 0 auto 14px; }
     .step h3 { font-family: var(--serif); font-size: 17px; font-weight: 400; margin-bottom: 8px; }
     .step p { font-size: 13px; color: var(--ink-mid); line-height: 1.6; }
 
+    /* TÉMOIGNAGES */
+    #temoignages { background: var(--surface); }
+    .temoignages-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 48px; }
+    .temoignage { background: var(--bg); border-radius: 20px; padding: 32px 28px; border: 1px solid var(--border); }
+    .temoignage-initiales { font-family: var(--serif); font-size: 13px; color: var(--terra); margin-bottom: 6px; letter-spacing: 1px; }
+    .temoignage-duree { font-size: 11px; color: var(--ink-dim); margin-bottom: 20px; }
+    .temoignage-avant { font-size: 14px; line-height: 1.75; color: var(--ink-mid); margin-bottom: 20px; font-style: italic; }
+    .temoignage-resultats { list-style: none; }
+    .temoignage-resultats li { font-size: 13px; color: var(--ink-mid); padding: 7px 0; border-bottom: 1px solid var(--border); display: flex; gap: 8px; line-height: 1.5; }
+    .temoignage-resultats li::before { content: "↗"; color: var(--terra); flex-shrink: 0; font-size: 12px; margin-top: 2px; }
+
+    /* CONTACT */
     #contact { background: var(--ink); padding: 96px 80px; }
-    #contact .sec-label { justify-content: center; }
-    #contact .sec-label::before { display: none; }
     .contact-title { font-family: var(--serif); font-size: clamp(28px,4vw,44px); font-weight: 300; color: rgba(242,232,218,0.95); text-align: center; margin-bottom: 8px; }
     .contact-title em { font-style: italic; color: var(--terra); }
     .contact-sub { font-size: 15px; color: rgba(242,232,218,0.45); text-align: center; max-width: 500px; margin: 0 auto 60px; line-height: 1.7; }
-
     .contact-consultation {
       background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 20px; padding: 36px; margin-bottom: 56px;
-      max-width: 900px; margin-left: auto; margin-right: auto;
+      border-radius: 20px; padding: 36px;
+      max-width: 900px; margin: 0 auto;
     }
     .contact-consultation-header { display: flex; align-items: baseline; gap: 16px; margin-bottom: 8px; }
     .contact-consultation-header h3 { font-family: var(--serif); font-size: 26px; font-weight: 300; color: rgba(242,232,218,0.95); }
     .contact-consultation-price { font-family: var(--serif); font-size: 28px; color: var(--terra); }
+    .contact-consultation-price-alt { font-size: 12px; color: rgba(242,232,218,0.3); margin-left: 4px; }
     .contact-consultation > p { font-size: 14px; color: rgba(242,232,218,0.45); margin-bottom: 24px; line-height: 1.7; }
     .calendly-inline-widget { min-width: 320px; height: 680px; border-radius: 12px; overflow: hidden; }
-
-    .contact-separator { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 0 auto 48px; max-width: 900px; }
-
-    .contact-packs { max-width: 600px; margin: 0 auto; }
-    .contact-packs h3 { font-family: var(--serif); font-size: 26px; font-weight: 300; color: rgba(242,232,218,0.95); text-align: center; margin-bottom: 8px; }
-    .packs-sub { font-size: 14px; color: rgba(242,232,218,0.45); text-align: center; margin-bottom: 12px; line-height: 1.6; }
-    .packs-note-box {
-      background: rgba(181,88,58,0.1); border: 1px solid rgba(181,88,58,0.2);
-      border-radius: 10px; padding: 12px 18px; text-align: center; margin-bottom: 28px;
-    }
-    .packs-note-box p { font-size: 13px; color: rgba(242,232,218,0.55); line-height: 1.6; }
-    .packs-note-box strong { color: #E8956C; }
-
-    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
-    .form-field { display: flex; flex-direction: column; gap: 6px; }
-    .form-field label { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(242,232,218,0.4); }
-    .form-field input, .form-field select {
-      width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 10px; padding: 12px 14px; color: rgba(242,232,218,0.9);
-      font-family: var(--sans); font-size: 13px; outline: none; transition: border-color 0.2s;
-      -webkit-appearance: none; appearance: none;
-    }
-    .form-field input::placeholder { color: rgba(242,232,218,0.25); }
-    .form-field select option { background: #2A1A10; color: rgba(242,232,218,0.9); }
-    .form-field input:focus, .form-field select:focus { border-color: rgba(181,88,58,0.5); }
-    .form-field-full { grid-column: 1 / -1; }
-    .form-select-wrap { position: relative; }
-    .form-select-wrap::after { content: "▾"; position: absolute; right: 14px; top: 50%; transform: translateY(-50%); color: rgba(242,232,218,0.4); font-size: 12px; pointer-events: none; }
-    .form-submit { width: 100%; margin-top: 8px; }
-    #f-status { display:none; padding:12px 16px; border-radius:10px; font-size:13px; text-align:center; margin-top:10px; }
 
     footer { background: var(--ink); border-top: 1px solid rgba(255,255,255,0.06); padding: 28px 80px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; }
     .flogo { font-family: var(--serif); font-size: 16px; font-weight: 300; color: rgba(242,232,218,0.4); }
@@ -181,12 +153,10 @@
       .hero-content { padding: 60px 28px; }
       section { padding: 60px 28px; }
       #contact { padding: 60px 28px; }
-      .about-grid { grid-template-columns: 1fr; gap: 36px; }
-      .offres-grid { grid-template-columns: 1fr; }
+      .about-grid, .pourcoi-grid, .offre-wrap, .temoignages-grid { grid-template-columns: 1fr; gap: 32px; }
       .steps { grid-template-columns: 1fr 1fr; }
       footer { padding: 28px; flex-direction: column; text-align: center; }
       .nav-links { display: none; }
-      .form-grid { grid-template-columns: 1fr; }
       .contact-consultation { padding: 24px 16px; }
     }
     @media (max-width: 580px) {
@@ -203,21 +173,23 @@
 <nav>
   <a href="#home" class="nav-logo">meije<em>.</em>naturo</a>
   <div class="nav-links">
-    <a href="#about">À propos</a>
-    <a href="#offres">Offres</a>
+    <a href="#pourcoi">Pour toi</a>
+    <a href="#offre">Accompagnement</a>
     <a href="#process">Comment ça fonctionne</a>
+    <a href="#about">Mon histoire</a>
   </div>
-  <a href="#contact" class="nav-cta">Prendre RDV</a>
+  <a href="#contact" class="nav-cta">Commencer</a>
 </nav>
 
+<!-- HERO -->
 <div id="home" class="hero">
   <div class="hero-content fu vis">
     <p class="eyebrow">Naturopathie fonctionnelle</p>
-    <h1>Vous faites tout bien.<br>Mais vous n'allez<br><em>toujours pas bien.</em></h1>
-    <p class="hero-sub">On cherche ensemble ce qui bloque vraiment — et vous repartez avec un protocole fait pour vous.</p>
+    <h1>Tu fais tout bien.<br>Mais tu ne vas<br><em>toujours pas bien.</em></h1>
+    <p class="hero-sub">On cherche ensemble ce qui bloque vraiment — et tu ne repars jamais avec juste une liste.</p>
     <div class="actions">
-      <a href="#contact" class="btn-p">Prendre RDV</a>
-      <a href="#about" class="btn-g">Mon approche</a>
+      <a href="#contact" class="btn-p">Je veux commencer</a>
+      <a href="#pourcoi" class="btn-g">C'est pour toi si…</a>
     </div>
   </div>
   <div class="hero-img">
@@ -225,83 +197,81 @@
   </div>
 </div>
 
-<section id="about">
+<!-- POUR TOI SI -->
+<section id="pourcoi">
   <div class="inner">
-    <div class="about-grid">
-      <div class="fu">
-        <p class="sec-label">À propos</p>
-        <h2>Mon <em>histoire</em></h2>
-        <div class="about-text">
-          <p>Pendant longtemps, j'ai été en lutte permanente avec mon corps. Acné, cycles irréguliers, fatigue profonde, SPM intense  et pendant des années j'ai cherché des solutions qui ne traitaient que les symptômes, jamais le fond.</p>
-          <p>Le déclic, ça a été de comprendre que <strong>tout était lié</strong>. Que mes hormones, mon énergie, mon stress et mon mode de vie faisaient partie d'un même terrain.</p>
-          <p>C'est ce chemin qui m'a menée à la naturopathie fonctionnelle  et aujourd'hui à vous.</p>
+    <p class="sec-label fu">C'est pour toi si</p>
+    <h2 class="fu">Tu te <em>reconnais</em> là-dedans</h2>
+    <p class="pourcoi-intro fu">Tu es épuisée sans explication. Tes bilans sont normaux. Ton médecin te dit que tout va bien — mais toi tu sais que quelque chose ne va pas.</p>
+    <div class="pourcoi-grid">
+      <ul class="symptomes fu">
+        <li>Ton cycle est chaotique ou douloureux</li>
+        <li>Tu te réveilles déjà fatiguée</li>
+        <li>Ton SPM te cloue quelques jours par mois</li>
+        <li>Depuis l'arrêt de la pilule, ton corps ne se régule plus</li>
+        <li>Tu as des crises d'anxiété que personne n'arrive à expliquer</li>
+        <li>Tu as essayé des compléments, cherché sur Google, vu plusieurs praticiens — et tu es toujours là à te demander ce qui ne va pas vraiment</li>
+      </ul>
+      <div class="fu" style="transition-delay:0.12s">
+        <div class="pourcoi-closing">
+          Tu n'as pas besoin d'un énième rendez-vous où on te dit que tout est normal.<br><br>
+          Tu as besoin que quelqu'un <em>cherche vraiment.</em>
         </div>
-      </div>
-      <div class="fu" style="transition-delay:0.15s">
-        <div class="card">
-          <h3>Mon approche</h3>
-          <p>Une approche globale, lente et respectueuse du corps. Pas de solutions miracles. Pas d'injonctions. Je travaille sur les causes  grâce à l'alimentation, la micronutrition, la phytothérapie et l'hygiène de vie.</p>
-          <p>Et ce que je retrouve presque à chaque fois en consultation, c'est un corps qui vit en état d'alerte depuis trop longtemps  sans même que vous vous en rendiez compte.</p>
-        </div>
-        <div class="card">
-          <h3>Mes spécialités</h3>
-          <p>SMOP · SPM · Endométriose · Fertilité · Fatigue chronique · Anxiété · Stress · Acné · Troubles digestifs · Syndrome de l'intestin irritable · Cycle menstruel</p>
+        <div style="margin-top:24px;text-align:center;">
+          <a href="#contact" class="btn-p">Je veux commencer</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="offres">
+<!-- OFFRE -->
+<section id="offre">
   <div class="inner">
-    <p class="sec-label fu">Mes accompagnements</p>
-    <h2 class="fu">Choisir <em>votre offre</em></h2>
-    <div class="offres-grid">
-      <div class="offre fu">
-        <p class="olabel">Accompagnement</p>
-        <h3 class="otitle">Pack 3 mois</h3>
-        <p class="oprice">250€ <span>paiement en plusieurs fois possible</span></p>
-        <ul class="odesc">
-          <li>1 consultation initiale complète</li>
-          <li>3 séances de suivi visio 45 min</li>
-          <li>Échanges encadrés via la plateforme lun-ven (réponse 72h)</li>
-          <li>Ressources personnalisées</li>
-          <li>Bilan de fin d'accompagnement</li>
+    <p class="sec-label fu">L'accompagnement</p>
+    <h2 class="fu">3 mois pour <em>changer vraiment</em></h2>
+    <div class="offre-wrap">
+      <div class="offre-card fu">
+        <p class="offre-label">Accompagnement</p>
+        <h3 class="offre-title">3 mois</h3>
+        <p class="offre-price">297€</p>
+        <p class="offre-price-alt">ou 3 × 99€</p>
+        <ul class="offre-list">
+          <li>Accès à la plateforme de suivi dès le départ</li>
+          <li>Anamnèse complète avant la première séance</li>
+          <li>3 séances visio mensuelles</li>
+          <li>Protocole personnalisé détaillé avec liens de commande</li>
+          <li>Suivi hebdomadaire de ton évolution</li>
+          <li>Messagerie directe lun-ven</li>
+          <li>Ajustement mensuel du protocole</li>
+          <li>Bilan d'évolution à chaque mois et en fin d'accompagnement</li>
         </ul>
-        <a href="#contact" class="btn-g">Me contacter</a>
-        <p class="pack-note">Je vous envoie le lien de paiement après confirmation.</p>
+        <button onclick="Calendly.initPopupWidget({url:'https://calendly.com/meijenaturo/consultation-naturopathie'});return false;" class="btn-p offre-cta">Je veux commencer</button>
+        <p class="offre-note">Tout en ligne, où que tu sois en France.</p>
       </div>
-      <div class="offre star fu" style="transition-delay:0.1s">
-        <span class="badge">Par ici pour commencer</span>
-        <p class="olabel">Consultation</p>
-        <h3 class="otitle">Consultation</h3>
-        <p class="oprice">70€</p>
-        <ul class="odesc">
-          <li>Analyse de votre questionnaire santé et de vos bilans sanguins</li>
-          <li>Rendez-vous visio 1h</li>
-          <li>Protocole personnalisé envoyé sous 72h</li>
-        </ul>
-        <button onclick="Calendly.initPopupWidget({url:'https://calendly.com/meijenaturo/consultation-naturopathie'});return false;" class="btn-p">Prendre RDV</button>
-      </div>
-      <div class="offre fu" style="transition-delay:0.2s">
-        <p class="olabel">Accompagnement</p>
-        <h3 class="otitle">Pack 6 mois</h3>
-        <p class="oprice">430€ <span>paiement en plusieurs fois possible</span></p>
-        <ul class="odesc">
-          <li>1 consultation initiale complète</li>
-          <li>6 séances de suivi visio 45 min</li>
-          <li>Échanges encadrés via la plateforme lun-ven (réponse 72h)</li>
-          <li>Ressources personnalisées</li>
-          <li>Bilan de fin d'accompagnement</li>
-        </ul>
-        <a href="#contact" class="btn-g">Me contacter</a>
-        <p class="pack-note">Je vous envoie le lien de paiement après confirmation.</p>
+      <div class="offre-details fu" style="transition-delay:0.12s">
+        <div class="offre-detail-block">
+          <h3>Avant notre première séance</h3>
+          <p>Tu remplis ton anamnèse sur ma plateforme. Tes symptômes, ton histoire, tes habitudes, tes bilans — tout au même endroit. Pour beaucoup de femmes, c'est la première fois que quelqu'un demande vraiment tout ça. C'est souvent déjà un soulagement.</p>
+        </div>
+        <div class="offre-detail-block">
+          <h3>La première séance</h3>
+          <p>Ce n'est pas une séance de découverte. J'ai analysé ton dossier en amont. On arrive directement à l'essentiel — je t'explique ce qui se passe probablement dans ton corps, pourquoi tes symptômes sont liés, et comment on va travailler.</p>
+        </div>
+        <div class="offre-detail-block">
+          <h3>Ton protocole</h3>
+          <p>Tu reçois un protocole construit pour toi. Alimentation, compléments adaptés à ton terrain, posologie, durée, liens directs pour commander. Tu n'as pas à chercher — tout est là.</p>
+        </div>
+        <div class="offre-detail-block">
+          <h3>Et je reste là</h3>
+          <p>Chaque semaine tu notes ton évolution sur la plateforme. Chaque mois on fait le point et on ajuste ce qui doit l'être. Tu as accès à une messagerie directe — si tu as une question, tu l'envoies. Je réponds.<br><br><strong>Tu n'es jamais seule face à ton protocole.</strong></p>
+        </div>
       </div>
     </div>
-    <p style="text-align:center;font-size:13px;color:var(--ink-dim);margin-top:24px;">Toutes les consultations se font en visio, où que vous soyez en France.</p>
   </div>
 </section>
 
+<!-- PROCESS -->
 <section id="process">
   <div class="inner">
     <p class="sec-label fu">Le parcours</p>
@@ -309,85 +279,111 @@
     <div class="steps">
       <div class="step fu">
         <div class="step-n">1</div>
-        <h3>Vous prenez RDV</h3>
-        <p>Pour une consultation, vous réservez directement en ligne. Pour un pack, envoyez-moi un message, je vous réponds sous 48h.</p>
+        <h3>Tu réserves</h3>
+        <p>Tu cliques sur le bouton, tu choisis ton créneau. La réservation est confirmée instantanément.</p>
       </div>
       <div class="step fu" style="transition-delay:0.1s">
         <div class="step-n">2</div>
-        <h3>Vous remplissez votre questionnaire</h3>
-        <p>Vous avez accès à la plateforme de suivi. Vous y remplissez votre questionnaire santé et uploadez vos bilans sanguins si vous en avez <strong>au moins 72 heures avant notre rendez-vous.</strong></p>
+        <h3>Tu remplis ton questionnaire</h3>
+        <p>Tu accèdes à la plateforme et tu remplis ton anamnèse complète — symptômes, histoire, bilans — au moins 72h avant notre première séance.</p>
       </div>
       <div class="step fu" style="transition-delay:0.2s">
         <div class="step-n">3</div>
         <h3>J'analyse et je prépare</h3>
-        <p>J'analyse votre dossier en profondeur avant notre rendez-vous. Votre protocole est construit sur mesure.</p>
+        <p>J'étudie ton dossier en profondeur avant qu'on se retrouve. On n'arrive pas à découverte — on arrive à l'essentiel.</p>
       </div>
       <div class="step fu" style="transition-delay:0.3s">
         <div class="step-n">4</div>
         <h3>On avance ensemble</h3>
-        <p>Suivi régulier, ajustements continus. Vous n'êtes jamais seule dans le processus.</p>
+        <p>Protocole sur mesure, suivi régulier, ajustements continus. Tu n'es jamais seule dans le processus.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- TÉMOIGNAGES -->
+<section id="temoignages">
+  <div class="inner">
+    <p class="sec-label fu">Ce que ça change</p>
+    <h2 class="fu">Concrètement</h2>
+    <div class="temoignages-grid">
+      <div class="temoignage fu">
+        <p class="temoignage-initiales">A.T.</p>
+        <p class="temoignage-duree">1 mois d'accompagnement</p>
+        <p class="temoignage-avant">Elle avait des crises d'angoisse presque tous les soirs. Elle en était à un stade où c'était soit l'accompagnement fonctionnait, soit elle serait sous traitement médicamenteux. Elle a voulu essayer autre chose avant cette ultime étape.</p>
+        <ul class="temoignage-resultats">
+          <li>Niveau de stress divisé par deux</li>
+          <li>Crises devenues rares et mieux gérées</li>
+          <li>Sommeil passé de 5 à 7/10</li>
+          <li>Énergie au réveil de 4 à 7/10</li>
+          <li>Transit normalisé</li>
+        </ul>
+      </div>
+      <div class="temoignage fu" style="transition-delay:0.12s">
+        <p class="temoignage-initiales">A.J.</p>
+        <p class="temoignage-duree">3 mois d'accompagnement</p>
+        <p class="temoignage-avant">SPM invalidant, anxiété, maux de tête fréquents, peau réactive, digestion perturbée. Des symptômes sur lesquels elle avait l'impression de ne pas avoir de prise.</p>
+        <ul class="temoignage-resultats">
+          <li>SPM transformé</li>
+          <li>Anxiété disparue</li>
+          <li>Sommeil nettement amélioré</li>
+          <li>Peau clarifiée même en phase prémenstruelle</li>
+          <li>Digestion régularisée</li>
+          <li>Énergie retrouvée au quotidien</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MON HISTOIRE -->
+<section id="about">
+  <div class="inner">
+    <div class="about-grid">
+      <div class="fu">
+        <p class="sec-label">Mon histoire</p>
+        <h2>Meije <em>Delmonte</em></h2>
+        <div class="about-text">
+          <p>Pendant longtemps j'ai été en lutte permanente avec mon corps. Acné, cycles irréguliers, fatigue profonde, SPM intense — et des années à chercher des solutions qui traitaient les symptômes, jamais le fond.</p>
+          <p>Le déclic, ça a été de comprendre que <strong>tout était lié</strong>. Que mes hormones, mon énergie, mon stress et mon mode de vie faisaient partie d'un même terrain.</p>
+          <p>C'est ce chemin qui m'a menée à la naturopathie fonctionnelle — et aujourd'hui à toi.</p>
+          <p>Je suis naturopathe fonctionnelle spécialisée en santé féminine. Cycles, SPM, SMOP, endométriose, fatigue hormonale, anxiété, digestion — je travaille sur les causes, pas sur les symptômes isolés.</p>
+        </div>
+      </div>
+      <div class="fu" style="transition-delay:0.15s">
+        <div class="card">
+          <h3>Mon approche</h3>
+          <p>Une approche globale, lente et respectueuse du corps. Pas de solutions miracles. Pas d'injonctions. Je travaille sur les causes — alimentation, micronutrition, phytothérapie, hygiène de vie.</p>
+          <p style="margin-top:10px;">Ce que je retrouve presque à chaque consultation, c'est un corps qui vit en état d'alerte depuis trop longtemps — sans même que tu t'en rendes compte.</p>
+        </div>
+        <div class="card">
+          <h3>Mes spécialités</h3>
+          <p>SMOP · SPM · Endométriose · Fertilité · Fatigue hormonale · Anxiété · Stress · Acné · Troubles digestifs · Syndrome de l'intestin irritable · Cycle menstruel</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
   <div class="inner">
-    <p class="sec-label fu">Contact</p>
+    <p class="sec-label fu" style="justify-content:center;">Commencer</p>
     <h2 class="contact-title fu">Prête à <em>commencer</em> ?</h2>
-    <p class="contact-sub fu">Réservez votre consultation directement en ligne, ou envoyez-moi un message pour un pack d'accompagnement.</p>
+    <p class="contact-sub fu">Choisis ton créneau directement — la réservation est confirmée instantanément.</p>
 
     <div class="contact-consultation fu">
       <div class="contact-consultation-header">
-        <h3>Consultation</h3>
-        <span class="contact-consultation-price">70€</span>
+        <h3>Accompagnement 3 mois</h3>
+        <span class="contact-consultation-price">297€</span>
+        <span class="contact-consultation-price-alt">ou 3 × 99€</span>
       </div>
-      <p>Choisissez votre créneau directement, la réservation est confirmée instantanément.</p>
+      <p>Réserve ta première séance. Je t'envoie l'accès à la plateforme dès confirmation.</p>
       <div class="calendly-inline-widget" data-url="https://calendly.com/meijenaturo/consultation-naturopathie?hide_gdpr_banner=1&background_color=1C1008&text_color=FAF4EC&primary_color=B5583A"></div>
     </div>
 
-    <hr class="contact-separator fu" />
-
-    <div class="contact-packs fu">
-      <h3>Packs d'accompagnement</h3>
-      <p class="packs-sub">Pack 3 mois (250€) · Pack 6 mois (430€) · Paiement en plusieurs fois possible</p>
-      <div class="packs-note-box">
-        <p>Envoyez-moi votre demande  je vous confirme la disponibilité et vous envoie le <strong>lien de paiement</strong> sous 48h.</p>
-      </div>
-      <div class="form-grid">
-        <div class="form-field">
-          <label>Prénom *</label>
-          <input type="text" id="f-prenom" placeholder="Votre prénom" required />
-        </div>
-        <div class="form-field">
-          <label>Nom *</label>
-          <input type="text" id="f-nom" placeholder="Votre nom" required />
-        </div>
-        <div class="form-field">
-          <label>Email *</label>
-          <input type="email" id="f-email" placeholder="votre@email.fr" required />
-        </div>
-        <div class="form-field">
-          <label>Pack souhaité *</label>
-          <div class="form-select-wrap">
-            <select id="f-pack" required>
-              <option value="">— Choisir un pack —</option>
-              <option value="Pack 3 mois — 250€">Pack 3 mois — 250€</option>
-              <option value="Pack 6 mois — 430€">Pack 6 mois — 430€</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-field form-field-full">
-          <label>Votre problématique principale</label>
-          <input type="text" id="f-message" placeholder="En quelques mots, ce qui vous amène…" />
-        </div>
-      </div>
-      <button class="btn-p form-submit" onclick="submitPackForm()">Envoyer ma demande →</button>
-      <div id="f-status"></div>
-    </div>
-
     <p style="text-align:center;font-size:12px;color:rgba(242,232,218,0.2);margin-top:48px;">
-      Je vous réponds sous 48h · Tous les accompagnements se font en visio
+      Tout en ligne · Où que tu sois en France
     </p>
   </div>
 </section>
@@ -395,8 +391,8 @@
 <footer>
   <span class="flogo">meije<em>.</em>naturo</span>
   <div class="flinks">
-    <a href="#about">À propos</a>
-    <a href="#offres">Offres</a>
+    <a href="#pourcoi">Pour toi</a>
+    <a href="#offre">Accompagnement</a>
     <a href="https://www.instagram.com/meije.naturo" target="_blank">Instagram</a>
     <a href="https://meijenaturo.fr/faq.html">FAQ</a>
     <a href="https://meijenaturo.fr/cgv.html">CGV &amp; Mentions légales</a>
@@ -406,61 +402,6 @@
 
 <script async src="https://assets.calendly.com/assets/external/widget.js"></script>
 <script>
-  window.addEventListener('load', function() {
-    if (window.emailjs) emailjs.init('zpxiv3rkIbtfdqAQ6');
-  });
-
-  async function submitPackForm() {
-    const prenom = document.getElementById('f-prenom').value.trim();
-    const nom = document.getElementById('f-nom').value.trim();
-    const email = document.getElementById('f-email').value.trim();
-    const pack = document.getElementById('f-pack').value;
-    const message = document.getElementById('f-message').value.trim();
-    const status = document.getElementById('f-status');
-
-    if (!prenom || !email) {
-      status.style.display = 'block';
-      status.style.background = 'rgba(181,88,58,0.15)';
-      status.style.color = '#E8956C';
-      status.textContent = 'Merci de renseigner votre prénom et votre email.';
-      return;
-    }
-    if (!pack) {
-      status.style.display = 'block';
-      status.style.background = 'rgba(181,88,58,0.15)';
-      status.style.color = '#E8956C';
-      status.textContent = 'Merci de choisir un pack.';
-      return;
-    }
-
-    status.style.display = 'block';
-    status.style.background = 'rgba(255,255,255,0.06)';
-    status.style.color = 'rgba(242,232,218,0.6)';
-    status.textContent = 'Envoi en cours...';
-
-    try {
-      emailjs.init('zpxiv3rkIbtfdqAQ6');
-      await emailjs.send('service_5bi57sr', 'template_im5mm8v', {
-        prenom: prenom + ' ' + nom,
-        action: 'souhaite un accompagnement — ' + pack,
-        message: 'Pack : ' + pack + ' | Problématique : ' + (message || 'Non précisée') + ' | Email : ' + email
-      });
-      status.style.background = 'rgba(74,122,90,0.15)';
-      status.style.color = '#6AAA7A';
-      status.textContent = 'Message envoyé ! Je vous réponds sous 48h.';
-      document.getElementById('f-prenom').value = '';
-      document.getElementById('f-nom').value = '';
-      document.getElementById('f-email').value = '';
-      document.getElementById('f-pack').value = '';
-      document.getElementById('f-message').value = '';
-    } catch(err) {
-      status.style.background = 'rgba(181,88,58,0.15)';
-      status.style.color = '#E8956C';
-      status.textContent = 'Une erreur est survenue. Écrivez-moi sur Instagram @meije.naturo';
-      console.error(err);
-    }
-  }
-
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
   }, { threshold: 0.1 });
