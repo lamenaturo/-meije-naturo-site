@@ -180,8 +180,8 @@
     .flinks a:hover { color: var(--terra); }
     .fmention { font-size: 11px; color: rgba(242,232,218,0.18); }
 
-    .fu { opacity: 0; transform: translateY(22px); transition: opacity 0.65s ease, transform 0.65s ease; }
-    .fu.vis { opacity: 1; transform: none; }
+    /* Effets d'apparition supprimés : tout le contenu s'affiche immédiatement */
+    .fu { opacity: 1; transform: none; transition: none; }
 
 
     /* QUI SUIS-JE */
@@ -262,6 +262,7 @@
     <a href="#fertilite">Fertilité</a>
     <a href="#about">Qui suis-je</a>
     <a href="#offre">Accompagnement</a>
+    <a href="https://www.instagram.com/meije.naturo" target="_blank" rel="noopener">Instagram</a>
   </div>
   <a href="https://tidycal.com/meijenaturo/appel-decouverte-offert-15mn" target="_blank" rel="noopener" class="nav-cta">Appel gratuit</a>
 </nav>
@@ -642,8 +643,9 @@
       <a href="https://tidycal.com/meijenaturo/appel-decouverte-offert-15mn" target="_blank" rel="noopener" class="btn-p">Appel découverte gratuit</a>
       <a href="https://buy.stripe.com/eVq14naw012UbOtdLu0Ba02" target="_blank" rel="noopener" class="btn-g">Accompagnement 3 mois</a>
       <a href="https://tidycal.com/meijenaturo/bilan-initial" target="_blank" rel="noopener" class="btn-g">Bilan initial</a>
+      <a href="https://www.instagram.com/meije.naturo" target="_blank" rel="noopener" class="btn-g">Instagram @meije.naturo</a>
     </div>
-    <p class="contact-note fu">Un doute ? Écris-moi à lamenaturo@gmail.com ou envoie-moi un message sur Instagram @meije.naturo.</p>
+    <p class="contact-note fu">Un doute ? Écris-moi à lamenaturo@gmail.com ou envoie-moi un message sur <a href="https://www.instagram.com/meije.naturo" target="_blank" rel="noopener" style="text-decoration:underline;">Instagram @meije.naturo</a>.</p>
   </div>
 </section>
 
@@ -666,12 +668,6 @@
     <button type="button" id="cookie-no">Refuser</button>
   </div>
 </div>
-
-<script>
-  document.querySelectorAll('.fu').forEach((el,i)=>{ el.style.transitionDelay = (i * 0.04) + 's'; });
-  const observer = new IntersectionObserver(es => { es.forEach(e => { if(e.isIntersecting) e.target.classList.add('vis'); }); }, {threshold:0.1});
-  document.querySelectorAll('.fu').forEach(el => observer.observe(el));
-</script>
 
 <script>
   // Google Analytics : ne se charge qu'avec l'accord du visiteur.
