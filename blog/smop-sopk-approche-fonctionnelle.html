@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SMOP (ex-SOPK) : comprendre ton terrain avec l'approche fonctionnelle — Meije Naturo</title>
+  <meta name="description" content="Le SOPK s'appelle désormais SMOP. Résistance à l'insuline, inflammation, stress, arrêt de la pilule : ce qui entretient vraiment tes symptômes, les bilans à demander et les leviers sur lesquels agir, avec l'approche de la naturopathie fonctionnelle." />
+  <link rel="canonical" href="https://meijenaturo.fr/blog/smop-sopk-approche-fonctionnelle.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Meije Naturo" />
+  <meta property="og:title" content="SMOP (ex-SOPK) : comprendre ce qui se passe vraiment dans ton corps" />
+  <meta property="og:description" content="Le SOPK change de nom. Ce que ça dit de ton corps, et ce que l'approche fonctionnelle regarde en plus." />
+  <meta property="og:url" content="https://meijenaturo.fr/blog/smop-sopk-approche-fonctionnelle.html" />
+  <meta property="og:image" content="https://meijenaturo.fr/meije.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "SMOP (ex-SOPK) : comprendre ce qui se passe vraiment dans ton corps",
+    "description": "Le SOPK s'appelle désormais SMOP. Ce qui entretient tes symptômes, les bilans à demander et les leviers sur lesquels agir, avec l'approche de la naturopathie fonctionnelle.",
+    "datePublished": "2026-10-23",
+    "dateModified": "2026-10-23",
+    "inLanguage": "fr-FR",
+    "author": { "@type": "Person", "name": "Meije Delmonte", "jobTitle": "Naturopathe fonctionnelle", "url": "https://meijenaturo.fr/" },
+    "publisher": { "@type": "Organization", "name": "Meije Naturo", "url": "https://meijenaturo.fr/" },
+    "image": "https://meijenaturo.fr/meije.jpg",
+    "mainEntityOfPage": "https://meijenaturo.fr/blog/smop-sopk-approche-fonctionnelle.html"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #FBF0E4; --surface: #FFF8F0; --dark: #4A2616;
+      --bark: #7A4524; --terra: #C4551A; --terra-dim: rgba(196,85,26,0.1); --gold: #F0A25A;
+      --ink: #3F2112; --ink-mid: rgba(63,33,18,0.72); --ink-dim: rgba(63,33,18,0.45);
+      --border: rgba(63,33,18,0.12);
+      --sans: 'DM Sans', sans-serif; --serif: 'Cormorant Garamond', Georgia, serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); font-family: var(--sans); color: var(--ink); -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(251,240,228,0.94); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 24px; display: flex; justify-content: space-between; align-items: center; height: 60px; }
+    .nav-logo { font-family: var(--serif); font-size: 20px; font-weight: 300; color: var(--ink); text-decoration: none; }
+    .nav-logo em { font-style: italic; color: var(--terra); }
+    .nav-right { display: flex; gap: 18px; align-items: center; }
+    .back { font-size: 13px; color: var(--ink-mid); text-decoration: none; }
+    .back:hover { color: var(--terra); }
+    .nav-cta { background: var(--terra); color: #FAF4EC; padding: 9px 18px; border-radius: 30px; font-size: 12px; font-weight: 500; text-decoration: none; }
+    .nav-cta:hover { background: #9A4828; }
+
+    article { max-width: 720px; margin: 0 auto; padding: 108px 24px 64px; }
+    .label { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--terra); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+    .label::before { content: ''; display: block; width: 30px; height: 1px; background: var(--terra); }
+    h1 { font-family: var(--serif); font-size: clamp(34px, 5.5vw, 52px); font-weight: 300; line-height: 1.1; margin-bottom: 18px; }
+    h1 em { font-style: italic; color: var(--terra); }
+    .meta { font-size: 12px; color: var(--ink-dim); margin-bottom: 36px; }
+    .chapo { font-family: var(--serif); font-size: clamp(19px, 2.4vw, 22px); font-weight: 300; line-height: 1.6; color: var(--ink); border-left: 2px solid var(--terra); padding-left: 20px; margin-bottom: 40px; }
+    h2 { font-family: var(--serif); font-size: clamp(26px, 3.6vw, 34px); font-weight: 400; line-height: 1.2; margin: 52px 0 16px; }
+    h2 em { font-style: italic; color: var(--terra); }
+    h3 { font-family: var(--serif); font-size: 21px; font-weight: 500; color: var(--terra); margin: 28px 0 8px; }
+    p { font-size: 16px; line-height: 1.85; color: var(--ink-mid); margin-bottom: 16px; }
+    strong { color: var(--ink); font-weight: 500; }
+    ul.dash { list-style: none; margin: 8px 0 20px; }
+    ul.dash li { font-size: 15px; line-height: 1.65; color: var(--ink-mid); padding: 9px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; }
+    ul.dash li::before { content: "—"; color: var(--terra); flex-shrink: 0; }
+
+    .box { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 24px 26px; margin: 28px 0; }
+    .box p:last-child { margin-bottom: 0; }
+    .box-title { font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--terra); margin-bottom: 10px; }
+
+    .cycle { display: grid; gap: 10px; margin: 24px 0 28px; counter-reset: c; }
+    .cycle div { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px 18px 14px 56px; position: relative; font-size: 14.5px; line-height: 1.6; color: var(--ink-mid); }
+    .cycle div::before { counter-increment: c; content: counter(c); position: absolute; left: 16px; top: 13px; width: 26px; height: 26px; border-radius: 50%; background: var(--terra-dim); color: var(--terra); font-family: var(--serif); font-size: 16px; display: flex; align-items: center; justify-content: center; }
+    .cycle-back { text-align: center; font-size: 13px; color: var(--terra); font-style: italic; margin-top: -14px; margin-bottom: 24px; }
+
+    .terrains { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 24px 0; }
+    .terrain { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 20px; }
+    .terrain h3 { margin: 0 0 6px; font-size: 19px; }
+    .terrain p { font-size: 14px; line-height: 1.7; margin: 0; }
+
+    table.bilan { width: 100%; border-collapse: collapse; margin: 20px 0 24px; font-size: 14px; }
+    table.bilan th { text-align: left; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--terra); font-weight: 500; padding: 0 10px 10px 0; border-bottom: 1px solid var(--border); }
+    table.bilan td { padding: 11px 10px 11px 0; border-bottom: 1px solid var(--border); color: var(--ink-mid); line-height: 1.55; vertical-align: top; }
+    table.bilan td:first-child { color: var(--ink); font-weight: 500; width: 42%; }
+
+    .cta { background: var(--dark); border-radius: 22px; padding: 34px 30px; margin: 52px 0 28px; text-align: center; }
+    .cta h2 { color: rgba(251,240,228,0.96); margin: 0 0 12px; }
+    .cta h2 em { color: var(--gold); }
+    .cta p { color: rgba(251,240,228,0.72); font-size: 15px; max-width: 520px; margin: 0 auto 24px; }
+    .cta-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-p { background: var(--terra); color: #FAF4EC; padding: 14px 26px; border-radius: 30px; font-size: 13px; font-weight: 500; text-decoration: none; display: inline-block; }
+    .btn-p:hover { background: #9A4828; }
+    .btn-g { border: 1px solid rgba(255,255,255,0.25); color: rgba(251,240,228,0.85); padding: 14px 26px; border-radius: 30px; font-size: 13px; text-decoration: none; display: inline-block; }
+    .btn-g:hover { border-color: var(--gold); color: var(--gold); }
+
+    .disclaimer { font-size: 12.5px; line-height: 1.7; color: var(--ink-dim); font-style: italic; border-top: 1px solid var(--border); padding-top: 20px; margin-top: 8px; }
+    .sources { font-size: 12.5px; line-height: 1.7; color: var(--ink-dim); margin-top: 14px; }
+    .sources a { color: var(--terra); }
+    .more { margin-top: 28px; font-size: 14px; }
+    .more a { color: var(--terra); }
+
+    footer { text-align: center; padding: 32px 24px; font-size: 12px; color: var(--ink-dim); border-top: 1px solid var(--border); }
+    footer a { color: var(--terra); text-decoration: none; }
+
+    .cookie { display: none; position: fixed; left: 16px; bottom: 16px; max-width: 360px; background: var(--dark); color: rgba(251,240,228,0.85); padding: 16px 18px; border-radius: 16px; font-size: 12px; line-height: 1.6; z-index: 200; box-shadow: 0 12px 32px rgba(28,16,8,0.3); }
+    .cookie.show { display: block; }
+    .cookie a { text-decoration: underline; }
+    .cookie-btns { display: flex; gap: 8px; margin-top: 12px; }
+    .cookie button { border-radius: 20px; padding: 8px 16px; font-size: 12px; cursor: pointer; border: 1px solid rgba(255,255,255,0.25); background: transparent; color: inherit; font-family: var(--sans); }
+    .cookie button.ok { background: var(--terra); border-color: var(--terra); color: #FAF4EC; }
+
+    @media (max-width: 640px) {
+      .terrains { grid-template-columns: 1fr; }
+      .nav-cta { display: none; }
+      article { padding: 92px 16px 48px; }
+      .cta { padding: 28px 20px; }
+      .cookie { left: 12px; right: 12px; max-width: none; }
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="/" class="nav-logo">meije<em>.</em>naturo</a>
+  <div class="nav-right">
+    <a href="/blog/" class="back">← Articles</a>
+    <a href="https://tidycal.com/meijenaturo/appel-decouverte-offert-15mn" target="_blank" rel="noopener" class="nav-cta">Appel gratuit</a>
+  </div>
+</nav>
+
+<article>
+  <p class="label">SMOP · Santé hormonale</p>
+  <h1>SMOP (ex-SOPK) : comprendre ce qui se passe <em>vraiment</em> dans ton corps</h1>
+  <p class="meta">Par Meije Delmonte, naturopathe fonctionnelle · 23 octobre 2026 · 8 min de lecture</p>
+
+  <p class="chapo">On t'a dit « SOPK », on t'a peut-être proposé la pilule pour « réguler », et tu es repartie avec plus de questions que de réponses. Le syndrome vient de changer de nom, et ce nouveau nom dit enfin quelque chose d'essentiel : ce n'est pas seulement une histoire d'ovaires.</p>
+
+  <h2>Le SOPK change de nom, <em>et c'est une bonne nouvelle</em></h2>
+  <p>En mai 2026, la communauté médicale internationale a adopté un nouveau nom : le <strong>SMOP, syndrome métabolique ovarien polyendocrinien</strong>. Deux raisons à ce changement.</p>
+  <p>D'abord, le mot « polykystique » était trompeur : à l'échographie, on ne voit pas de kystes, mais des <strong>follicules immatures</strong>, des ovulations qui ont démarré puis se sont arrêtées en route. Ensuite, l'ancien nom enfermait le syndrome dans les ovaires, alors qu'il touche le <strong>métabolisme</strong>, plusieurs <strong>glandes hormonales</strong>, la peau, le cœur et le moral.</p>
+  <p>C'est exactement la lecture de la naturopathie fonctionnelle depuis toujours : l'ovaire n'est pas la cause, il est souvent celui qui exprime un déséquilibre venu d'ailleurs.</p>
+
+  <div class="box">
+    <p class="box-title">En chiffres</p>
+    <p>Le SMOP concernerait environ <strong>une femme sur huit</strong> en âge d'avoir des enfants, et la grande majorité des femmes concernées ne le savent pas.</p>
+  </div>
+
+  <h2>Les signes qui doivent <em>t'alerter</em></h2>
+  <p>Le SMOP ne se ressemble pas d'une femme à l'autre. Tu peux avoir un seul de ces signes, ou plusieurs :</p>
+  <ul class="dash">
+    <li>Des cycles longs (plus de 35 jours), irréguliers, ou des règles qui disparaissent</li>
+    <li>De l'acné sur le menton et la mâchoire, qui persiste à l'âge adulte</li>
+    <li>Une pilosité plus marquée (menton, ventre, poitrine) ou des cheveux qui tombent sur le dessus du crâne</li>
+    <li>Une prise de poids autour du ventre, difficile à perdre malgré tes efforts</li>
+    <li>Des fringales de sucre, des coups de fatigue après les repas</li>
+    <li>Des difficultés à tomber enceinte</li>
+    <li>Une fatigue, une anxiété ou une humeur en dents de scie qui ne s'expliquent pas</li>
+  </ul>
+  <p>Et non : tu n'as pas besoin d'être en surpoids pour avoir un SMOP. Beaucoup de femmes minces en ont un, et passent des années sans qu'on y pense.</p>
+
+  <h2>Le cercle vicieux <em>au cœur du SMOP</em></h2>
+  <p>Pour comprendre tes symptômes, il faut comprendre ce qui les relie. Dans une grande partie des cas, tout tourne autour de l'<strong>insuline</strong>, l'hormone qui fait entrer le sucre dans tes cellules.</p>
+  <div class="cycle">
+    <div>Tes cellules répondent moins bien à l'insuline : ton pancréas en fabrique <strong>davantage</strong> pour compenser. C'est la résistance à l'insuline, souvent invisible sur une simple glycémie.</div>
+    <div>Cet excès d'insuline pousse tes ovaires à produire plus d'<strong>androgènes</strong> (testostérone), et fait baisser la SHBG, la protéine qui les neutralise. Résultat : plus de testostérone libre et active.</div>
+    <div>Trop d'androgènes, et les follicules <strong>s'arrêtent en chemin</strong>. Pas d'ovulation, donc pas de progestérone : cycles longs, règles irrégulières, SPM, fertilité en berne.</div>
+    <div>Les androgènes et le manque de progestérone favorisent à leur tour le stockage abdominal, l'acné, les fringales… qui <strong>aggravent la résistance à l'insuline</strong>.</div>
+  </div>
+  <p class="cycle-back">↺ et la boucle recommence</p>
+  <p>La bonne nouvelle, c'est qu'un cercle vicieux se casse à n'importe quel endroit. C'est là que l'hygiène de vie a un vrai poids.</p>
+
+  <h2>L'approche fonctionnelle : <em>pas « quoi », mais « pourquoi »</em></h2>
+  <p>La médecine pose le diagnostic, et c'est indispensable. L'approche fonctionnelle, elle, cherche <strong>ce qui entretient le déséquilibre chez toi</strong>. Deux femmes avec un SMOP peuvent avoir des moteurs très différents, et donc des besoins très différents. Voici les terrains que je regarde systématiquement :</p>
+  <div class="terrains">
+    <div class="terrain">
+      <h3>Le terrain métabolique</h3>
+      <p>Résistance à l'insuline, glycémie en montagnes russes, repas trop sucrés ou trop espacés, sédentarité. Le moteur le plus fréquent.</p>
+    </div>
+    <div class="terrain">
+      <h3>Le terrain inflammatoire</h3>
+      <p>Une inflammation chronique de bas grade, souvent liée à l'intestin, entretient la résistance à l'insuline et la production d'androgènes.</p>
+    </div>
+    <div class="terrain">
+      <h3>Le système nerveux</h3>
+      <p>Le stress chronique fait grimper le cortisol, déstabilise la glycémie, et les surrénales peuvent fabriquer elles aussi des androgènes (DHEA).</p>
+    </div>
+    <div class="terrain">
+      <h3>L'après-pilule</h3>
+      <p>Cycles absents ou acné qui flambe après l'arrêt de la pilule : un rebond qui peut ressembler à un SMOP, et qui ne se travaille pas de la même façon.</p>
+    </div>
+  </div>
+  <p>À cela s'ajoutent la <strong>thyroïde</strong>, qui peut aussi perturber l'ovulation, et les <strong>carences</strong> (fer, vitamine D, magnésium, zinc…) qui fragilisent tout l'équilibre. Et parce qu'on ne sépare pas le corps de ce qu'on vit, je regarde aussi la charge émotionnelle et mentale : elle se lit très souvent dans le cycle.</p>
+
+  <h2>Ce que ton bilan <em>ne dit pas toujours</em></h2>
+  <p>Beaucoup de femmes entendent « ton bilan est normal » alors qu'elles se sentent tout sauf bien. Il y a deux raisons à ça : certains marqueurs ne sont tout simplement pas demandés, et les autres sont lus selon les normes du laboratoire, qui sont des moyennes de population, pas des valeurs de bonne santé.</p>
+  <p>En naturopathie fonctionnelle, je lis tes résultats selon des <strong>normes fonctionnelles</strong>, plus fines, pour repérer un déséquilibre avant qu'il ne devienne une pathologie. Voici les marqueurs qui m'intéressent dans un SMOP, à demander à ton médecin :</p>
+  <table class="bilan">
+    <thead><tr><th>Marqueur</th><th>Ce qu'il éclaire</th></tr></thead>
+    <tbody>
+      <tr><td>Glycémie et insuline à jeun (indice HOMA)</td><td>La résistance à l'insuline, bien avant que la glycémie ne bouge</td></tr>
+      <tr><td>Testostérone totale, SHBG, testostérone libre</td><td>L'excès d'androgènes réellement actifs</td></tr>
+      <tr><td>DHEA-S</td><td>La part des surrénales et du stress</td></tr>
+      <tr><td>LH et FSH (en début de cycle)</td><td>La communication entre le cerveau et les ovaires</td></tr>
+      <tr><td>CRP ultrasensible</td><td>L'inflammation de bas grade</td></tr>
+      <tr><td>TSH, T4 libre, T3 libre</td><td>Une thyroïde qui freinerait l'ovulation</td></tr>
+      <tr><td>Ferritine, vitamine D</td><td>Les réserves dont ton équilibre hormonal a besoin</td></tr>
+    </tbody>
+  </table>
+  <p>Ces résultats ne servent pas à poser un diagnostic, c'est le rôle de ton médecin. Ils servent à comprendre <strong>ton</strong> terrain, et à construire un protocole qui te correspond vraiment.</p>
+
+  <h2>Les leviers sur lesquels <em>tu peux agir</em></h2>
+  <h3>Ton assiette</h3>
+  <p>L'objectif n'est pas de supprimer, mais de <strong>stabiliser ta glycémie</strong> : un petit-déjeuner salé et riche en protéines plutôt que sucré, des légumes et des protéines en début de repas, des glucides complets et en quantité adaptée, et pas de grignotage sucré isolé.</p>
+  <h3>Le mouvement</h3>
+  <p>Tes muscles sont ton meilleur allié contre la résistance à l'insuline. Le renforcement musculaire et la marche après les repas sont souvent plus efficaces que de longues séances de cardio épuisantes.</p>
+  <h3>Le sommeil et le stress</h3>
+  <p>Une seule mauvaise nuit suffit à diminuer ta sensibilité à l'insuline. Apaiser ton système nerveux n'est pas un bonus : c'est un pilier du protocole.</p>
+  <h3>La micronutrition ciblée</h3>
+  <p>Certains compléments ont un vrai intérêt dans le SMOP, mais seulement s'ils sont choisis selon <strong>ton</strong> terrain et tes bilans, avec la bonne forme et le bon dosage. Prendre ce qui marche « pour tout le monde » sur les réseaux, c'est souvent dépenser beaucoup pour peu de résultats.</p>
+
+  <div class="box">
+    <p class="box-title">À retenir</p>
+    <p>Le SMOP ne se guérit pas, mais il se <strong>module</strong>. En agissant sur ce qui l'entretient, beaucoup de femmes retrouvent des cycles plus réguliers, une peau plus calme, une énergie plus stable, et se sentent enfin comprises.</p>
+  </div>
+
+  <div class="cta">
+    <h2>Tu te <em>reconnais</em> là-dedans ?</h2>
+    <p>On peut regarder ensemble ce qui entretient ton SMOP, et par où commencer. Réserve ton appel découverte offert de 15 minutes, en visio, sans engagement.</p>
+    <div class="cta-actions">
+      <a href="https://tidycal.com/meijenaturo/appel-decouverte-offert-15mn" target="_blank" rel="noopener" class="btn-p">Réserver mon appel gratuit</a>
+      <a href="/#offre" class="btn-g">Voir les accompagnements</a>
+    </div>
+  </div>
+
+  <p class="disclaimer">Cet article est informatif et ne remplace pas un avis médical. Le diagnostic du SMOP relève de ton médecin ou de ton gynécologue. Mon accompagnement en naturopathie fonctionnelle est complémentaire à ton suivi médical : je ne pose pas de diagnostic et je ne prescris pas de traitement.</p>
+  <p class="sources">Sources : Teede H.J. et al., <em>The Lancet</em>, 2026, sur le changement de nom du SOPK en SMOP ; <a href="https://www.elsan.care/fr/nos-actualites/pourquoi-sopk-change-de-nom-devient-smop" target="_blank" rel="noopener">ELSAN, « Pourquoi le SOPK change de nom »</a>.</p>
+  <p class="more"><a href="/blog/">← Tous les articles</a></p>
+</article>
+
+<footer>
+  <p>© 2026 Meije Delmonte · <a href="/">Accueil</a> · <a href="/blog/">Articles</a> · <a href="/faq.html">FAQ</a> · <a href="/cgv.html">CGV &amp; Mentions légales</a></p>
+</footer>
+
+<div class="cookie" id="cookie" role="dialog" aria-label="Mesure d'audience">
+  J'utilise Google Analytics pour mesurer les visites de ce site et l'améliorer. Tu acceptes ? <a href="/cgv.html">En savoir plus</a>
+  <div class="cookie-btns">
+    <button type="button" class="ok" id="cookie-yes">Accepter</button>
+    <button type="button" id="cookie-no">Refuser</button>
+  </div>
+</div>
+
+<script>
+  // Google Analytics : ne se charge qu'avec l'accord du visiteur (même choix que sur l'accueil).
+  (function(){
+    var GA_ID = 'G-X636W3KWGD';
+    var KEY = 'meije_analytics', choice = null;
+    try { choice = localStorage.getItem(KEY); } catch(e) {}
+    function load(){
+      var t = document.createElement('script');
+      t.async = true; t.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+      document.head.appendChild(t);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function(){ dataLayer.push(arguments); };
+      gtag('js', new Date());
+      gtag('config', GA_ID, { anonymize_ip: true });
+      document.addEventListener('click', function(ev){
+        var a = ev.target.closest && ev.target.closest('a[href*="tidycal.com"], a[href*="buy.stripe.com"]');
+        if (a) gtag('event', 'cta_click', { link_url: a.href, link_text: (a.textContent || '').trim().slice(0, 60), page: location.pathname });
+      });
+    }
+    var box = document.getElementById('cookie');
+    function save(v){ try { localStorage.setItem(KEY, v); } catch(e) {} box.classList.remove('show'); if (v === 'yes') load(); }
+    if (choice === 'yes') load();
+    else if (choice !== 'no') {
+      box.classList.add('show');
+      document.getElementById('cookie-yes').onclick = function(){ save('yes'); };
+      document.getElementById('cookie-no').onclick = function(){ save('no'); };
+    }
+  })();
+</script>
+</body>
+</html>
