@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SOPK &amp; Fertilité : le Guide d'Action 14 jours — Meije Naturo</title>
+  <meta name="description" content="Le Guide d'Action 14 jours pour soutenir ton ovulation et retrouver ton énergie avec un SOPK (SMOP), sans régime restrictif. Guide PDF + version audio, par Meije Delmonte, naturopathe fonctionnelle." />
+  <meta property="og:type" content="product" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Meije Naturo" />
+  <meta property="og:title" content="SOPK &amp; Fertilité : le Guide d'Action 14 jours" />
+  <meta property="og:description" content="Soutenir ton ovulation et retrouver ton énergie, sans régime restrictif. Guide PDF + version audio." />
+  <meta property="og:url" content="https://meijenaturo.fr/guide-sopk.html" />
+  <meta property="og:image" content="https://meijenaturo.fr/meije.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:#FBF0E4; --surface:#FFF8F0; --dark:#4A2616;
+      --ink:#3F2112; --ink-mid:rgba(63,33,18,0.68); --ink-dim:rgba(63,33,18,0.45); --border:rgba(63,33,18,0.12);
+      --terra:#C4551A; --terra-dim:rgba(196,85,26,0.1); --bark:#7A4524; --gold:#F0A25A;
+      --sans:'DM Sans', sans-serif; --serif:'Cormorant Garamond', Georgia, serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); font-family: var(--sans); color: var(--ink); -webkit-font-smoothing: antialiased; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(251,240,228,0.94); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 24px; display: flex; justify-content: space-between; align-items: center; height: 60px; }
+    .nav-logo { font-family: var(--serif); font-size: 20px; font-weight: 300; letter-spacing: 0.5px; }
+    .nav-logo em { font-style: italic; color: var(--terra); }
+    .nav-cta { background: var(--terra); color: #FFF8F0; padding: 9px 20px; border-radius: 30px; font-size: 12px; font-weight: 500; transition: background 0.2s; }
+    .nav-cta:hover { background: #A84612; }
+
+    .eyebrow, .sec-label { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--terra); margin-bottom: 18px; display: flex; align-items: center; gap: 10px; }
+    .eyebrow::before, .sec-label::before { content: ''; display: block; width: 30px; height: 1px; background: var(--terra); flex-shrink: 0; }
+    h1 { font-family: var(--serif); font-size: clamp(36px, 4.6vw, 58px); font-weight: 300; line-height: 1.1; margin-bottom: 18px; }
+    h1 em, h2 em { font-style: italic; color: var(--terra); }
+    h2 { font-family: var(--serif); font-size: clamp(28px, 4vw, 42px); font-weight: 300; line-height: 1.15; margin-bottom: 22px; }
+    section { padding: 88px 80px; }
+    .inner { max-width: 1060px; margin: 0 auto; }
+    .narrow { max-width: 720px; margin: 0 auto; }
+    .lead { font-size: 15px; line-height: 1.85; color: var(--ink-mid); }
+
+    .btn-p { background: var(--terra); color: #FFF8F0; padding: 15px 30px; border-radius: 30px; font-size: 14px; font-weight: 500; display: inline-block; transition: all 0.2s; text-align: center; }
+    .btn-p:hover { background: #A84612; transform: translateY(-1px); }
+
+    /* HERO */
+    .hero { padding: 120px 80px 80px; }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 64px; align-items: center; }
+    .hero-sub { font-family: var(--serif); font-size: clamp(17px, 2vw, 21px); font-weight: 300; color: var(--ink-mid); line-height: 1.55; margin-bottom: 18px; }
+    .hero-desc { font-size: 14px; line-height: 1.8; color: var(--ink-mid); margin-bottom: 30px; max-width: 520px; }
+    .price-line { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 8px; }
+    .price { font-family: var(--serif); font-size: 46px; font-weight: 400; color: var(--terra); line-height: 1; }
+    .price-old { font-family: var(--serif); font-size: 26px; color: var(--ink-dim); text-decoration: line-through; }
+    .price-tag { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; background: var(--terra-dim); color: var(--terra); padding: 5px 12px; border-radius: 20px; }
+    .price-note { font-size: 13px; color: var(--bark); margin-bottom: 22px; }
+    .reassure { font-size: 12px; color: var(--ink-dim); margin-top: 16px; line-height: 1.7; }
+
+    /* COUVERTURE (remplaçable par le visuel Canva) */
+    .cover-wrap { display: flex; justify-content: center; position: relative; }
+    .cover { width: min(100%, 340px); aspect-ratio: 3 / 4; background: var(--dark); color: #FFF8F0; border-radius: 6px 16px 16px 6px; padding: 38px 32px 30px 40px; position: relative; box-shadow: 0 30px 60px rgba(63,33,18,0.28), 0 6px 14px rgba(63,33,18,0.18); display: flex; flex-direction: column; }
+    .cover::before { content: ''; position: absolute; left: 12px; top: 0; bottom: 0; width: 1px; background: rgba(255,248,240,0.18); }
+    .cover-kicker { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; }
+    .cover-title { font-family: var(--serif); font-size: 34px; font-weight: 300; line-height: 1.08; margin-bottom: 14px; }
+    .cover-title em { font-style: italic; color: var(--gold); }
+    .cover-sub { font-size: 12px; line-height: 1.6; color: rgba(255,248,240,0.72); }
+    .cover-14 { font-family: var(--serif); font-size: 110px; font-weight: 300; line-height: 1; color: rgba(240,162,90,0.22); margin-top: auto; }
+    .cover-author { font-size: 11px; letter-spacing: 1.5px; color: rgba(255,248,240,0.6); }
+    .cover-img { width: min(100%, 360px); border-radius: 10px; box-shadow: 0 30px 60px rgba(63,33,18,0.28); }
+    .audio-chip { position: absolute; bottom: -14px; right: calc(50% - 190px); background: var(--surface); border: 1px solid var(--border); border-radius: 30px; padding: 10px 16px; font-size: 12px; color: var(--ink); display: flex; align-items: center; gap: 8px; box-shadow: 0 10px 24px rgba(63,33,18,0.12); }
+    .audio-chip svg { color: var(--terra); }
+
+    /* RECONNAISSANCE */
+    #toi { background: var(--surface); }
+    .pain-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 36px; }
+    .pain { background: var(--bg); border: 1px solid var(--border); border-radius: 18px; padding: 24px; }
+    .pain h3 { font-family: var(--serif); font-size: 21px; font-weight: 400; color: var(--terra); margin-bottom: 8px; }
+    .pain p { font-size: 14px; line-height: 1.7; color: var(--ink-mid); }
+
+    /* MÉCANISME */
+    .mech { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin: 36px 0 28px; counter-reset: m; }
+    .mech-step { border-top: 2px solid var(--terra); padding-top: 18px; counter-increment: m; }
+    .mech-step::before { content: counter(m); font-family: var(--serif); font-size: 30px; color: var(--terra); display: block; margin-bottom: 6px; }
+    .mech-step p { font-size: 14px; line-height: 1.7; color: var(--ink-mid); }
+    .quote { font-family: var(--serif); font-size: 23px; font-weight: 300; line-height: 1.5; border-left: 2px solid var(--terra); padding-left: 20px; margin-top: 12px; }
+
+    /* CE QUE ÇA CHANGE */
+    #change { background: var(--dark); color: #FFF8F0; }
+    #change .sec-label { color: var(--gold); }
+    #change .sec-label::before { background: var(--gold); }
+    #change h2 em { color: var(--gold); }
+    #change .lead { color: rgba(255,248,240,0.7); }
+    .change-list { list-style: none; margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 32px; }
+    .change-list li { font-size: 15px; line-height: 1.65; color: rgba(255,248,240,0.86); padding-left: 28px; position: relative; }
+    .change-list li::before { content: ''; position: absolute; left: 0; top: 8px; width: 14px; height: 8px; border-left: 2px solid var(--gold); border-bottom: 2px solid var(--gold); transform: rotate(-45deg); }
+
+    /* CONTENU */
+    .mod-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 36px; }
+    .mod { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 28px; }
+    .mod-n { font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--terra); margin-bottom: 10px; }
+    .mod h3 { font-family: var(--serif); font-size: 24px; font-weight: 400; margin-bottom: 10px; }
+    .mod ul { list-style: none; }
+    .mod li { font-size: 13.5px; line-height: 1.6; color: var(--ink-mid); padding: 6px 0 6px 18px; position: relative; }
+    .mod li::before { content: '—'; color: var(--terra); position: absolute; left: 0; }
+    .extras { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 18px; }
+    .extra { background: var(--terra-dim); border-radius: 20px; padding: 24px; }
+    .extra h3 { font-family: var(--serif); font-size: 21px; font-weight: 400; color: var(--bark); margin-bottom: 8px; }
+    .extra p { font-size: 13.5px; line-height: 1.65; color: var(--ink-mid); }
+
+    /* MEIJE */
+    #meije { background: var(--surface); }
+    .meije-grid { display: grid; grid-template-columns: 220px 1fr; gap: 48px; align-items: center; }
+    .meije-grid img { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; }
+    .meije-txt p { font-size: 15px; line-height: 1.85; color: var(--ink-mid); margin-bottom: 14px; }
+    .meije-txt p:last-child { margin-bottom: 0; }
+
+    /* OFFRE */
+    #prix { text-align: center; }
+    .offer { background: var(--surface); border: 1px solid var(--terra); border-radius: 28px; padding: 44px 36px; max-width: 560px; margin: 32px auto 0; box-shadow: 0 24px 60px rgba(63,33,18,0.1); }
+    .offer .price-line { justify-content: center; }
+    .offer-list { list-style: none; text-align: left; margin: 26px 0 28px; }
+    .offer-list li { font-size: 14px; color: var(--ink-mid); padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; line-height: 1.5; }
+    .offer-list li::before { content: '—'; color: var(--terra); flex-shrink: 0; }
+    .offer .btn-p { width: 100%; }
+    .legal-note { font-size: 11.5px; color: var(--ink-dim); line-height: 1.6; margin-top: 16px; }
+
+    /* FAQ */
+    #faq { background: var(--surface); }
+    .faq details { background: var(--bg); border: 1px solid var(--border); border-radius: 16px; margin-bottom: 12px; overflow: hidden; }
+    .faq summary { padding: 18px 24px; cursor: pointer; font-family: var(--serif); font-size: 19px; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: '+'; color: var(--terra); font-size: 22px; flex-shrink: 0; transition: transform 0.2s; }
+    .faq details[open] summary::after { transform: rotate(45deg); }
+    .faq details p { padding: 0 24px 20px; font-size: 14px; line-height: 1.8; color: var(--ink-mid); }
+
+    .disclaimer { font-size: 12px; color: var(--ink-dim); font-style: italic; line-height: 1.7; text-align: center; max-width: 720px; margin: 0 auto; padding: 36px 24px 0; }
+
+    footer { background: var(--dark); padding: 28px 80px; margin-top: 56px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; }
+    .flogo { font-family: var(--serif); font-size: 16px; font-weight: 300; color: rgba(251,240,228,0.55); }
+    .flogo em { font-style: italic; color: var(--gold); }
+    .flinks { display: flex; gap: 20px; }
+    .flinks a { font-size: 12px; color: rgba(251,240,228,0.45); }
+    .flinks a:hover { color: var(--gold); }
+
+    .sticky-cta { display: none; }
+    .cookie { display: none; position: fixed; left: 16px; bottom: 16px; max-width: 360px; background: var(--dark); color: rgba(242,232,218,0.85); padding: 16px 18px; border-radius: 16px; font-size: 12px; line-height: 1.6; z-index: 200; box-shadow: 0 12px 32px rgba(28,16,8,0.3); }
+    .cookie.show { display: block; }
+    .cookie a { text-decoration: underline; }
+    .cookie-btns { display: flex; gap: 8px; margin-top: 12px; }
+    .cookie button { border-radius: 20px; padding: 8px 16px; font-size: 12px; cursor: pointer; border: 1px solid rgba(255,255,255,0.25); background: transparent; color: inherit; font-family: var(--sans); }
+    .cookie button.ok { background: var(--terra); border-color: var(--terra); color: #FFF8F0; }
+
+    .is-normal .launch-only { display: none !important; }
+    .is-launch .normal-only { display: none !important; }
+
+    @media (max-width: 900px) {
+      .hero { padding: 96px 24px 64px; }
+      .hero-grid, .meije-grid { grid-template-columns: 1fr; gap: 44px; }
+      .cover-wrap { order: -1; }
+      .cover { width: min(100%, 280px); }
+      .cover-title { font-size: 29px; }
+      .cover-14 { font-size: 88px; }
+      .audio-chip { right: calc(50% - 160px); }
+      section { padding: 60px 24px; }
+      .pain-grid, .mech, .change-list, .mod-grid, .extras { grid-template-columns: 1fr; }
+      .meije-grid img { margin: 0 auto; width: 180px; height: 180px; }
+      footer { padding: 28px 24px; flex-direction: column; text-align: center; }
+      .nav-cta { display: none; }
+      .sticky-cta { display: block; position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 90; background: var(--terra); color: #FFF8F0; text-align: center; padding: 14px; border-radius: 30px; font-size: 14px; font-weight: 500; box-shadow: 0 8px 24px rgba(63,33,18,0.25); }
+      body { padding-bottom: 84px; }
+      .cookie { left: 12px; right: 12px; bottom: 84px; max-width: none; }
+    }
+  </style>
+</head>
+<body class="is-launch">
+
+<nav>
+  <a href="/" class="nav-logo">meije<em>.</em>naturo</a>
+  <a href="#prix" class="nav-cta">Obtenir le guide</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="inner hero-grid">
+    <div>
+      <p class="eyebrow">Guide pratique · PDF + version audio</p>
+      <h1>SOPK &amp; Fertilité : <em>le Guide d'Action 14 jours</em></h1>
+      <p class="hero-sub">Pour soutenir ton ovulation et retrouver ton énergie, sans régime restrictif.</p>
+      <p class="hero-desc">Une méthode pas à pas en naturopathie fonctionnelle pour stabiliser ta glycémie, apaiser l'inflammation et agir sur la cause profonde de tes symptômes. Sans compter les calories, sans rien t'interdire.</p>
+      <div class="price-line">
+        <span class="price"><span class="launch-only">19 €</span><span class="normal-only">27 €</span></span>
+        <span class="price-old launch-only">27 €</span>
+        <span class="price-tag launch-only">Prix de lancement</span>
+      </div>
+      <p class="price-note launch-only">Jusqu'au lundi 23 novembre à minuit, ensuite 27 €.</p>
+      <a href="#prix" data-buy class="btn-p">Obtenir mon Guide d'Action</a>
+      <p class="reassure">Accès immédiat après paiement · PDF + 6 pistes audio · Paiement sécurisé par Stripe</p>
+    </div>
+    <div class="cover-wrap">
+      <!-- Pour mettre le visuel Canva : remplacer le bloc .cover par <img class="cover-img" src="guide-sopk-cover.webp" alt="Couverture du Guide d'Action 14 jours"> -->
+      <div class="cover" aria-hidden="true">
+        <p class="cover-kicker">Guide d'action</p>
+        <p class="cover-title">SOPK &amp; <em>Fertilité</em></p>
+        <p class="cover-sub">Soutenir ton ovulation et retrouver ton énergie, sans régime restrictif</p>
+        <p class="cover-14">14</p>
+        <p class="cover-author">Meije Delmonte · naturopathe fonctionnelle</p>
+      </div>
+      <span class="audio-chip"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 14v-2a9 9 0 0 1 18 0v2"/><rect x="3" y="14" width="4" height="7" rx="1.5"/><rect x="17" y="14" width="4" height="7" rx="1.5"/></svg>+ version audio, lue par moi</span>
+    </div>
+  </div>
+</section>
+
+<!-- RECONNAISSANCE -->
+<section id="toi">
+  <div class="inner">
+    <p class="sec-label">Est-ce que ça te parle ?</p>
+    <h2>Tu te <em>reconnais</em> là-dedans</h2>
+    <div class="pain-grid">
+      <div class="pain">
+        <h3>Le coup de barre de 15h</h3>
+        <p>Après le déjeuner, c'est la chute. Tu luttes pour garder les yeux ouverts, et les envies de sucre arrivent juste derrière.</p>
+      </div>
+      <div class="pain">
+        <h3>Des cycles imprévisibles</h3>
+        <p>40, 50 jours ou plus. Tu attends ton ovulation sans savoir si ton corps va fonctionner ce mois-ci.</p>
+      </div>
+      <div class="pain">
+        <h3>« Mange moins, bouge plus »</h3>
+        <p>On te répète de perdre du poids. Tu fais des efforts, la balance ne bouge pas, et les symptômes restent.</p>
+      </div>
+      <div class="pain">
+        <h3>Ne pas savoir par où commencer</h3>
+        <p>Tu sais que le SOPK peut freiner ta fertilité, mais tu ne veux pas d'un énième régime drastique. Tu veux un plan clair.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MÉCANISME -->
+<section id="pourquoi">
+  <div class="inner narrow">
+    <p class="sec-label">Ce qui se passe vraiment</p>
+    <h2>Le problème n'est pas ta volonté. <em>C'est l'approche qui est incomplète.</em></h2>
+    <p class="lead">Dans le SOPK, une grande partie des femmes ont une insulino-résistance et une inflammation de fond, même quand elles sont minces. Quand ta glycémie fait les montagnes russes au fil de la journée :</p>
+    <div class="mech">
+      <div class="mech-step"><p>Ton pancréas sécrète trop d'insuline pour faire redescendre le sucre.</p></div>
+      <div class="mech-step"><p>Cet excès d'insuline pousse tes ovaires à fabriquer plus d'androgènes, les hormones dites « masculines ».</p></div>
+      <div class="mech-step"><p>La maturation des follicules est perturbée : l'ovulation est retardée, ou n'a pas lieu.</p></div>
+    </div>
+    <p class="quote">Tant que ta glycémie et l'inflammation ne sont pas apaisées, aucun régime restrictif ne peut donner de résultats durables.</p>
+  </div>
+</section>
+
+<!-- CE QUE ÇA CHANGE -->
+<section id="change">
+  <div class="inner">
+    <p class="sec-label">Ce que le guide change</p>
+    <h2>Des leviers simples, <em>pas une contrainte de plus</em></h2>
+    <p class="lead">Plutôt que d'ajouter du stress à ton quotidien, le guide s'appuie sur la naturopathie fonctionnelle pour rééquilibrer ton terrain, étape par étape.</p>
+    <ul class="change-list">
+      <li>Réduire les fringales et les coups de barre grâce à la règle de l'assiette glycémique, sans compter les calories.</li>
+      <li>Créer un terrain favorable à l'ovulation en apaisant l'inflammation de fond.</li>
+      <li>Identifier ton profil dominant (insulino-résistant, inflammatoire ou surrénalien) pour savoir où agir en premier.</li>
+      <li>Reprendre confiance en ton corps avec un plan structuré sur 14 jours et un journal pour voir ce qui change.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTENU -->
+<section id="contenu">
+  <div class="inner">
+    <p class="sec-label">Ce que tu reçois</p>
+    <h2>Le contenu <em>du guide</em></h2>
+    <p class="lead">Environ 30 à 45 minutes de lecture, ou d'écoute, puis 14 jours d'action.</p>
+    <div class="mod-grid">
+      <div class="mod">
+        <p class="mod-n">Module 1</p>
+        <h3>Le décodage hormonal</h3>
+        <ul>
+          <li>Le lien entre insuline, androgènes et ovulation, expliqué simplement</li>
+          <li>L'inflammation, l'amplificateur silencieux</li>
+          <li>Le test pour repérer ton profil dominant</li>
+          <li>Pourquoi les régimes restrictifs se retournent contre toi</li>
+        </ul>
+      </div>
+      <div class="mod">
+        <p class="mod-n">Module 2</p>
+        <h3>Le plan nutritionnel 14 jours</h3>
+        <ul>
+          <li>La règle de l'assiette glycémique</li>
+          <li>Les 5 règles du petit-déjeuner anti-coup de barre</li>
+          <li>Le déroulé jour par jour, par étapes</li>
+          <li>La liste de courses et 8 fiches repas prêtes en moins de 15 minutes</li>
+        </ul>
+      </div>
+      <div class="mod">
+        <p class="mod-n">Module 3</p>
+        <h3>Le guide des compléments utiles</h3>
+        <ul>
+          <li>Myo-inositol, magnésium, oméga-3 : pourquoi et comment</li>
+          <li>Bien choisir ses oméga-3 : l'indice TOTOX</li>
+          <li>Ma sélection prête à commander, avec un code de réduction</li>
+        </ul>
+      </div>
+      <div class="mod">
+        <p class="mod-n">Module 4</p>
+        <h3>Le journal d'auto-observation</h3>
+        <ul>
+          <li>La grille quotidienne : énergie, fringales, digestion, sommeil</li>
+          <li>Apprendre à lire ta glaire cervicale</li>
+          <li>Le point à J7 et ton bilan à J14</li>
+        </ul>
+      </div>
+    </div>
+    <div class="extras">
+      <div class="extra">
+        <h3>La version audio</h3>
+        <p>Les 6 pistes, lues par moi, pour écouter le guide en cuisinant, en marchant ou en voiture.</p>
+      </div>
+      <div class="extra">
+        <h3>Un bon de 20 €</h3>
+        <p>À utiliser sur le Bilan initial ou sur l'accompagnement 3 mois, si tu veux aller plus loin avec un protocole sur mesure.</p>
+      </div>
+      <div class="extra">
+        <h3>Ta question par e-mail</h3>
+        <p>Une adresse dédiée aux lectrices pour poser tes questions sur les fiches pratiques après ta lecture.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEIJE -->
+<section id="meije">
+  <div class="inner meije-grid">
+    <img src="meije-rond.webp" width="220" height="220" alt="Meije Delmonte, naturopathe fonctionnelle" loading="lazy" />
+    <div class="meije-txt">
+      <p class="sec-label">Qui t'accompagne</p>
+      <h2>Moi, c'est <em>Meije</em></h2>
+      <p>Je suis naturopathe fonctionnelle, spécialisée en santé hormonale féminine : cycles, SOPK, endométriose et fertilité, certifiée en fertilité et accompagnement des couples.</p>
+      <p>Dans ce guide, j'ai rassemblé les bases que je pose avec toutes mes consultantes SOPK, pour que tu puisses commencer dès aujourd'hui, chez toi, à ton rythme.</p>
+    </div>
+  </div>
+</section>
+
+<!-- OFFRE -->
+<section id="prix">
+  <div class="inner">
+    <p class="sec-label" style="justify-content:center">Ton guide</p>
+    <h2>Commence <em>dès ce soir</em></h2>
+    <div class="offer">
+      <div class="price-line">
+        <span class="price"><span class="launch-only">19 €</span><span class="normal-only">27 €</span></span>
+        <span class="price-old launch-only">27 €</span>
+      </div>
+      <p class="price-note launch-only" style="margin-bottom:0">Prix de lancement jusqu'au lundi 23 novembre à minuit</p>
+      <ul class="offer-list">
+        <li>Le guide complet en PDF, lisible sur téléphone et imprimable</li>
+        <li>La version audio en 6 pistes</li>
+        <li>Le plan 14 jours, la liste de courses et 8 fiches repas express</li>
+        <li>Le journal d'auto-observation à imprimer</li>
+        <li>Ma sélection de compléments avec 10 % de réduction</li>
+        <li>Un bon de 20 € sur le Bilan initial ou l'accompagnement 3 mois</li>
+      </ul>
+      <a href="#prix" data-buy class="btn-p">Obtenir mon Guide d'Action</a>
+      <p class="legal-note">Paiement sécurisé par Stripe. Téléchargement immédiat après le paiement, avec un e-mail de confirmation. Contenu numérique livré immédiatement : en validant ta commande, tu acceptes cette livraison immédiate et tu renonces à ton droit de rétractation (article L221-28 du Code de la consommation).</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="inner narrow">
+    <p class="sec-label">Questions fréquentes</p>
+    <h2>Tu te <em>demandes</em> peut-être…</h2>
+    <div class="faq">
+      <details>
+        <summary>Est-ce que le guide est pour moi si je n'ai pas de diagnostic officiel de SOPK ?</summary>
+        <p>Oui. Le guide agit sur les racines fonctionnelles : la régulation de la glycémie, l'inflammation et le soutien de l'ovulation. Si tu as des signes évocateurs (cycles longs ou imprévisibles, coups de fatigue l'après-midi, fringales de sucre, acné, difficulté à concevoir), les leviers présentés te concernent. Parles-en aussi à ton médecin pour poser un diagnostic.</p>
+      </details>
+      <details>
+        <summary>Est-ce encore un régime ? Je vais devoir supprimer les glucides ?</summary>
+        <p>Non. Les régimes très restrictifs créent un stress pour le corps qui peut aggraver les déséquilibres hormonaux. Ici, tu ne comptes pas les calories et tu ne supprimes rien : tu apprends à composer tes assiettes (protéines, bons gras, fibres) pour garder une glycémie stable, en gardant le plaisir de manger.</p>
+      </details>
+      <details>
+        <summary>Combien de temps ça me prend au quotidien ?</summary>
+        <p>La lecture complète prend 30 à 45 minutes, ou autant d'écoute avec la version audio. Les fiches repas se préparent en moins de 15 minutes, et le journal te prend 2 minutes chaque soir.</p>
+      </details>
+      <details>
+        <summary>Comment et quand je reçois mon guide ?</summary>
+        <p>Tout de suite. Dès que ton paiement est validé, tu arrives sur la page de téléchargement et tu reçois un e-mail de confirmation. Le PDF se lit sur téléphone, tablette ou ordinateur, et peut s'imprimer. Les audios se téléchargent ou s'écoutent directement.</p>
+      </details>
+      <details>
+        <summary>Est-ce que ça remplace un suivi médical ou une consultation ?</summary>
+        <p>Non. C'est un guide d'hygiène de vie et de naturopathie fonctionnelle. Il ne remplace pas un avis médical ni un traitement prescrit par ton médecin ou ton gynécologue. C'est une première étape pour assainir ton terrain. Si tu veux aller plus loin, le bon de 20 € inclus te permet de réserver un accompagnement personnalisé.</p>
+      </details>
+      <details>
+        <summary>Et si j'ai une question après ma lecture ?</summary>
+        <p>Tu n'es pas seule. Une adresse e-mail réservée aux lectrices est indiquée à la fin du guide : tu peux m'écrire pour tes questions sur les fiches pratiques, ou pour savoir si un bilan personnalisé serait utile dans ta situation.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<p class="disclaimer">Ce guide est un outil éducatif d'hygiène de vie et de naturopathie fonctionnelle. Il ne pose pas de diagnostic et ne remplace pas un suivi médical. Les résultats varient d'une personne à l'autre et aucun résultat, notamment en matière de fertilité, n'est garanti.</p>
+
+<footer>
+  <p class="flogo">meije<em>.</em>naturo © 2026</p>
+  <div class="flinks">
+    <a href="/">Accueil</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/cgv.html">CGV &amp; mentions légales</a>
+    <a href="https://www.instagram.com/meije.naturo" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</footer>
+
+<a href="#prix" data-buy class="sticky-cta">Obtenir le guide · <span class="launch-only">19 €</span><span class="normal-only">27 €</span></a>
+
+<div class="cookie" id="cookie" role="dialog" aria-label="Mesure d'audience">
+  J'utilise Google Analytics pour mesurer les visites de ce site et l'améliorer. Tu acceptes ? <a href="/cgv.html">En savoir plus</a>
+  <div class="cookie-btns">
+    <button type="button" class="ok" id="cookie-yes">Accepter</button>
+    <button type="button" id="cookie-no">Refuser</button>
+  </div>
+</div>
+
+<script>
+  // Prix de lancement : 19 € jusqu'au lundi 23 novembre 2026 à minuit (heure de Paris), puis 27 €.
+  // Coller ici les deux liens de paiement Stripe.
+  (function(){
+    var LIEN_LANCEMENT = 'STRIPE_LANCEMENT_19';
+    var LIEN_NORMAL = 'STRIPE_NORMAL_27';
+    var FIN_LANCEMENT = Date.parse('2026-11-24T00:00:00+01:00');
+    var lancement = Date.now() < FIN_LANCEMENT;
+    document.body.className = lancement ? 'is-launch' : 'is-normal';
+    var lien = lancement ? LIEN_LANCEMENT : LIEN_NORMAL;
+    if (lien.indexOf('https://') !== 0) return; // liens pas encore collés : les boutons restent sur #prix
+    var boutons = document.querySelectorAll('[data-buy]');
+    for (var i = 0; i < boutons.length; i++) { boutons[i].href = lien; }
+  })();
+</script>
+<script src="/blog/consent.js"></script>
+</body>
+</html>
