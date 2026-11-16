@@ -138,6 +138,13 @@
     .offre-banner-txt strong { font-family: var(--serif); font-size: 20px; font-weight: 400; color: var(--ink); display: block; margin-bottom: 2px; }
     .offre-grid.after-banner { margin-top: 24px; }
     .offre-compare { font-size: 13px; line-height: 1.7; color: var(--ink-mid); text-align: center; max-width: 680px; margin: 28px auto 0; }
+    .guide-encart { display: grid; grid-template-columns: auto 1fr auto; gap: 28px; align-items: center; background: #4A2616; border-radius: 24px; padding: 28px 32px; margin-top: 40px; }
+    .guide-encart-tag { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: #F0A25A; margin-bottom: 6px; }
+    .guide-encart-title { font-family: var(--serif); font-size: 26px; font-weight: 300; color: rgba(251,240,228,0.95); margin-bottom: 6px; }
+    .guide-encart-title em { font-style: italic; color: #F0A25A; }
+    .guide-encart-txt { font-size: 13px; line-height: 1.7; color: rgba(251,240,228,0.7); }
+    .guide-encart-n { font-family: var(--serif); font-size: 72px; font-weight: 300; line-height: 1; color: rgba(240,162,90,0.35); }
+    @media (max-width: 900px) { .guide-encart { grid-template-columns: 1fr; gap: 14px; padding: 24px; } .guide-encart-n { display: none; } }
     .offre-soon { font-size: 11px; font-style: italic; opacity: 0.6; }
     .offre-details-title { font-family: var(--serif); font-size: clamp(24px, 3vw, 34px); font-weight: 300; margin: 72px 0 8px; }
     .offre-details-title em { font-style: italic; color: var(--terra); }
@@ -278,6 +285,7 @@
     <a href="#fertilite">Fertilité</a>
     <a href="#about">Qui suis-je</a>
     <a href="#offre">Accompagnement</a>
+    <a href="/guide-sopk.html">Guide SOPK</a>
     <a href="/blog/">Articles</a>
     <a href="https://www.instagram.com/meije.naturo" target="_blank" rel="noopener">Instagram</a>
   </div>
@@ -564,6 +572,16 @@
     </div>
 
     <p class="offre-compare fu">Bilan initial (69€) + 3 rendez-vous de suivi (120€) = 189€ à la carte. L'accompagnement 3 mois (297€) y ajoute la messagerie directe, le suivi hebdomadaire et tes bonus.</p>
+
+    <div class="guide-encart fu">
+      <p class="guide-encart-n">14</p>
+      <div>
+        <p class="guide-encart-tag">Nouveau · Guide PDF + audio</p>
+        <p class="guide-encart-title">SOPK &amp; Fertilité : <em>le Guide d'Action 14 jours</em></p>
+        <p class="guide-encart-txt">Pas encore prête pour un accompagnement ? Commence chez toi, à ton rythme, avec un plan de 14 jours pour stabiliser ta glycémie et soutenir ton ovulation. Avec un bon de 20 € à utiliser ensuite sur le Bilan initial ou l'accompagnement.</p>
+      </div>
+      <a href="/guide-sopk.html" class="btn-p">Découvrir le guide</a>
+    </div>
 
     <h3 class="offre-details-title fu">Ce que tu reçois <em>pendant 3 mois</em></h3>
     <div class="offre-details">

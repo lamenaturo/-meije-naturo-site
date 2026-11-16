@@ -196,7 +196,7 @@
         <span class="price-old launch-only">27 €</span>
         <span class="price-tag launch-only">Prix de lancement</span>
       </div>
-      <p class="price-note launch-only">Jusqu'au lundi 23 novembre à minuit, ensuite 27 €.</p>
+      <p class="price-note launch-only">Jusqu'au vendredi 27 novembre à minuit, ensuite 27 €.</p>
       <a href="#prix" data-buy class="btn-p">Obtenir mon Guide d'Action</a>
       <p class="reassure">Accès immédiat après paiement · PDF + 6 pistes audio · Paiement sécurisé par Stripe</p>
     </div>
@@ -209,7 +209,7 @@
         <p class="cover-14">14</p>
         <p class="cover-author">Meije Delmonte · naturopathe fonctionnelle</p>
       </div>
-      <span class="audio-chip"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 14v-2a9 9 0 0 1 18 0v2"/><rect x="3" y="14" width="4" height="7" rx="1.5"/><rect x="17" y="14" width="4" height="7" rx="1.5"/></svg>+ version audio, lue par moi</span>
+      <span class="audio-chip"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 14v-2a9 9 0 0 1 18 0v2"/><rect x="3" y="14" width="4" height="7" rx="1.5"/><rect x="17" y="14" width="4" height="7" rx="1.5"/></svg>+ version audio</span>
     </div>
   </div>
 </section>
@@ -319,7 +319,7 @@
     <div class="extras">
       <div class="extra">
         <h3>La version audio</h3>
-        <p>Les 6 pistes, lues par moi, pour écouter le guide en cuisinant, en marchant ou en voiture.</p>
+        <p>Les 6 pistes audio du guide, pour l'écouter en cuisinant, en marchant ou en voiture.</p>
       </div>
       <div class="extra">
         <h3>Un bon de 20 €</h3>
@@ -327,7 +327,7 @@
       </div>
       <div class="extra">
         <h3>Ta question par e-mail</h3>
-        <p>Une adresse dédiée aux lectrices pour poser tes questions sur les fiches pratiques après ta lecture.</p>
+        <p>Après ta lecture, tu peux m'écrire pour poser tes questions sur les fiches pratiques.</p>
       </div>
     </div>
   </div>
@@ -356,7 +356,7 @@
         <span class="price"><span class="launch-only">19 €</span><span class="normal-only">27 €</span></span>
         <span class="price-old launch-only">27 €</span>
       </div>
-      <p class="price-note launch-only" style="margin-bottom:0">Prix de lancement jusqu'au lundi 23 novembre à minuit</p>
+      <p class="price-note launch-only" style="margin-bottom:0">Prix de lancement jusqu'au vendredi 27 novembre à minuit</p>
       <ul class="offer-list">
         <li>Le guide complet en PDF, lisible sur téléphone et imprimable</li>
         <li>La version audio en 6 pistes</li>
@@ -399,7 +399,7 @@
       </details>
       <details>
         <summary>Et si j'ai une question après ma lecture ?</summary>
-        <p>Tu n'es pas seule. Une adresse e-mail réservée aux lectrices est indiquée à la fin du guide : tu peux m'écrire pour tes questions sur les fiches pratiques, ou pour savoir si un bilan personnalisé serait utile dans ta situation.</p>
+        <p>Tu n'es pas seule. Mon adresse e-mail est indiquée à la fin du guide : tu peux m'écrire pour tes questions sur les fiches pratiques, ou pour savoir si un bilan personnalisé serait utile dans ta situation.</p>
       </details>
     </div>
   </div>
@@ -428,12 +428,12 @@
 </div>
 
 <script>
-  // Prix de lancement : 19 € jusqu'au lundi 23 novembre 2026 à minuit (heure de Paris), puis 27 €.
+  // Prix de lancement : 19 € jusqu'au vendredi 27 novembre 2026 à minuit (heure de Paris), puis 27 €.
   // Coller ici les deux liens de paiement Stripe.
   (function(){
-    var LIEN_LANCEMENT = 'STRIPE_LANCEMENT_19';
-    var LIEN_NORMAL = 'STRIPE_NORMAL_27';
-    var FIN_LANCEMENT = Date.parse('2026-11-24T00:00:00+01:00');
+    var LIEN_LANCEMENT = 'https://buy.stripe.com/eVqbJ1bA49zq7yd6j20Ba08';
+    var LIEN_NORMAL = 'https://buy.stripe.com/7sYaEX47C4f605L5eY0Ba09';
+    var FIN_LANCEMENT = Date.parse('2026-11-28T00:00:00+01:00');
     var lancement = Date.now() < FIN_LANCEMENT;
     document.body.className = lancement ? 'is-launch' : 'is-normal';
     var lien = lancement ? LIEN_LANCEMENT : LIEN_NORMAL;
